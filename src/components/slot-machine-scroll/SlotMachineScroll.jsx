@@ -8,11 +8,10 @@ export default function SlotMachineScroll() {
     const [renderSet, setRenderSet] = useState(0);
 
     const ref = useRef(null);
-    var offset = 0;
-
+   
     useEffect(() => {
         const handleScroll = () => {
-            const scrollPosition = window.scrollY - offset;
+            const scrollPosition = window.scrollY - renderSet;
 
             const newRotation =
                 Math.floor(scrollPosition / rotationStep) * rotationStep;
@@ -37,9 +36,10 @@ export default function SlotMachineScroll() {
                 if (entry.isIntersecting) {
                     // console.log(window.scrollY);
                     if (!renderSet) {
-                        offset = window.scrollY;
+                        
+                        let offset = window.scrollY;
                         console.log("yess");
-                        setRenderSet(1);
+                        setRenderSet(offset);
                     }
                     window.addEventListener("scroll", handleScroll);
                 } else {
@@ -56,7 +56,7 @@ export default function SlotMachineScroll() {
         return () => {
             observer.disconnect();
         };
-    }, [currentRotation]);
+    }, [currentRotation, renderSet]);
 
     return (
         <div className="scroll-parent-container"  >

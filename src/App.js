@@ -19,7 +19,7 @@ function App() {
                     style={{ height: "100vh", backgroundColor: "beige" }}
                     data-scroll-section
                 />
-                <SlotMachineScroll data-scroll-section/>
+                <SlotMachineScroll/>
             </div>
         </LocomotiveScrollProvider>
     );
