@@ -7,13 +7,16 @@
     font-stretch: 200%;
     font-variation-settings: "wdth" 1000, "wght" 700, "slnt" 0;
 }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     background-color: #000;
 }
 
-.container > .slot-item {
+.picker > .slot-item {
     font-size: 100px;
     padding: 200px;
     display: block;
@@ -28,40 +31,40 @@ body {
     text-align: center;
 }
 
-.container > .slot-item:nth-child(1) {
+.picker > .slot-item:nth-child(1) {
     transform: rotateX(0deg) translate3d(0px, 0px, 280px);
 
     /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
 }
-.container > .slot-item:nth-child(2) {
+.picker > .slot-item:nth-child(2) {
     transform: rotateX(-22.5deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(3) {
+.picker > .slot-item:nth-child(3) {
     transform: rotateX(-45deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(4) {
+.picker > .slot-item:nth-child(4) {
     transform: rotateX(-67.5deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(5) {
+.picker > .slot-item:nth-child(5) {
     transform: rotateX(-90deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(6) {
+.picker > .slot-item:nth-child(6) {
     transform: rotateX(-112.5deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(7) {
+.picker > .slot-item:nth-child(7) {
     transform: rotateX(-135deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(8) {
+.picker > .slot-item:nth-child(8) {
     transform: rotateX(-157.5deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(9) {
+.picker > .slot-item:nth-child(9) {
     transform: rotateX(-180deg) translate3d(0px, 0px, 280px);
 }
-.container > .slot-item:nth-child(10) {
+.picker > .slot-item:nth-child(10) {
     transform: rotateX(-202.5deg) translate3d(0px, 0px, 280px);
 }
 
-.container {
+.picker {
     height: 100%;
     width: 100%;
     position: relative;
@@ -72,7 +75,7 @@ body {
     transition: all ease 0.1s;
 }
 
-.container .slot-item {
+.picker .slot-item {
     font-family: Grstk-Mega;
     position: absolute;
     color: white;
@@ -94,24 +97,28 @@ body {
     background-color: black;
 }
 
-.wrapper::before{
+.wrapper::before {
     position: absolute;
-top:0
-
+    top: 0;
 }
-.wrapper::after{
+.wrapper::after {
     bottom: 0;
     position: absolute;
-
 }
 .contact {
     width: 100%;
-    height: 102vh;
+    height: 96vh;
     background-color: #000;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    transition: all ease ;
-    margin-bottom: 1px;
+    transition: all ease 0.1s;
+}
+
+.scroll-parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

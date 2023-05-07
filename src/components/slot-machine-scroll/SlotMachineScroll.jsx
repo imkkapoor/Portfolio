@@ -1,40 +1,73 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./SlotMachineScroll.css";
 
 export default function SlotMachineScroll() {
     const [currentRotation, setCurrentRotation] = useState(0);
     const [scrollAmount, setScrollAmount] = useState(0);
-    const rotationStep = 1;
+    const rotationStep = 3;
+    const [renderSet, setRenderSet] = useState(0);
+
+    const ref = useRef(null);
+    var offset = 0;
 
     useEffect(() => {
         const handleScroll = () => {
-            if (currentRotation < 91) {
-                setScrollAmount(Math.floor(window.scrollY));
-            }
-            const scrollPosition = window.scrollY;
+            const scrollPosition = window.scrollY - offset;
+
             const newRotation =
                 Math.floor(scrollPosition / rotationStep) * rotationStep;
-            if (newRotation !== currentRotation && newRotation < 100) {
+            if (
+                newRotation !== currentRotation &&
+                newRotation > 0 &&
+                newRotation < 100
+            ) {
                 setCurrentRotation(newRotation);
+                setScrollAmount(scrollPosition);
                 // setCurrentRotation(0);
             }
         };
 
-        window.addEventListener("scroll", handleScroll);
+        // window.addEventListener("scroll", handleScroll);
+        // return () => {
+        //     window.removeEventListener("scroll", handleScroll);
+        // };
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    // console.log(window.scrollY);
+                    if (!renderSet) {
+                        offset = window.scrollY;
+                        console.log("yess");
+                        setRenderSet(1);
+                    }
+                    window.addEventListener("scroll", handleScroll);
+                } else {
+                    setCurrentRotation(0);
+                    setScrollAmount(0);
+                    window.removeEventListener("scroll", handleScroll);
+                }
+            },
+            { threshold: 0.9 }
+        );
+
+        observer.observe(ref.current);
+
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            observer.disconnect();
         };
     }, [currentRotation]);
 
     return (
-        <div>
+        <div className="scroll-parent-container"  >
             <div
                 className="contact"
                 style={{ transform: `translateY(${scrollAmount}px)` }}
+                ref={ref}
             >
                 <div className="wrapper">
                     <div
-                        className="container"
+                        className="picker"
                         style={{
                             transform: `rotateX(${currentRotation}deg)`,
                         }}
