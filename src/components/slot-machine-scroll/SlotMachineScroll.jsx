@@ -4,8 +4,9 @@ import "./SlotMachineScroll.css";
 export default function SlotMachineScroll() {
     const [currentRotation, setCurrentRotation] = useState(0);
     const [scrollAmount, setScrollAmount] = useState(0);
-    const rotationStep = 3;
     const [renderSet, setRenderSet] = useState(0);
+
+    const rotationStep = 0.1;
 
     const ref = useRef(null);
    
@@ -24,6 +25,8 @@ export default function SlotMachineScroll() {
                 setScrollAmount(scrollPosition);
                 // setCurrentRotation(0);
             }
+
+            
         };
 
         // window.addEventListener("scroll", handleScroll);
@@ -52,11 +55,52 @@ export default function SlotMachineScroll() {
         );
 
         observer.observe(ref.current);
+        var inUse = null;
+            if(currentRotation>-10 && currentRotation<11.25){
+                inUse = document.getElementById("facebook");
+                inUse.style.color = "white";
+               
+            }else{
+                inUse = document.getElementById("facebook");
+                inUse.style.color = "black";
+                
+            }
+            if(currentRotation>11.35 && currentRotation<33.75){
+                inUse = document.getElementById("email");
+                inUse.style.color = "white";
+            }else{
+                inUse = document.getElementById("email");
+                inUse.style.color = "black";
+            }
+            if(currentRotation>33.75 && currentRotation<56.25){
+                inUse = document.getElementById("instagram");
+                inUse.style.color = "white";
+            }else{
+                inUse = document.getElementById("instagram");
+                inUse.style.color = "black";
+            }
+            if(currentRotation>56.25 && currentRotation<78.75){
+                inUse = document.getElementById("twitter");
+                inUse.style.color = "white";
+            }else{
+                inUse = document.getElementById("twitter");
+                inUse.style.color = "black";
+            }
+            if(currentRotation>78.75 && currentRotation<110){
+                inUse = document.getElementById("github");
+                inUse.style.color = "white";
+            }else{
+                inUse = document.getElementById("github");
+                inUse.style.color = "black";
+            }
 
         return () => {
             observer.disconnect();
         };
     }, [currentRotation, renderSet]);
+
+       
+    
 
     return (
         <div className="scroll-parent-container"  >
@@ -72,11 +116,11 @@ export default function SlotMachineScroll() {
                             transform: `rotateX(${currentRotation}deg)`,
                         }}
                     >
-                        <div className="slot-item">Facebook</div>
-                        <div className="slot-item">Email</div>
-                        <div className="slot-item">Instagram</div>
-                        <div className="slot-item">Twitter</div>
-                        <div className="slot-item">Github</div>
+                        <div className="slot-item" id = "facebook">Facebook</div>
+                        <div className="slot-item" id = "email">Email</div>
+                        <div className="slot-item" id = "instagram">Instagram</div>
+                        <div className="slot-item" id = "twitter">Twitter</div>
+                        <div className="slot-item" id = "github">Github</div>
                     </div>
                 </div>
             </div>

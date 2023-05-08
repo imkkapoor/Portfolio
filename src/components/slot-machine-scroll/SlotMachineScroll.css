@@ -20,36 +20,39 @@ body {
     font-size: 100px;
     padding: 200px;
     display: block;
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
     position: absolute;
     width: 100%;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    /* -webkit-backface-visibility: hidden; */
+    -webkit-backface-visibility: hidden;
     text-align: center;
 }
 
 .picker > .slot-item:nth-child(1) {
     transform: rotateX(0deg) translate3d(0px, 0px, 280px);
-
-    /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
 }
 .picker > .slot-item:nth-child(2) {
     transform: rotateX(-22.5deg) translate3d(0px, 0px, 280px);
+    color: black;
 }
 .picker > .slot-item:nth-child(3) {
     transform: rotateX(-45deg) translate3d(0px, 0px, 280px);
+    color: black;
 }
 .picker > .slot-item:nth-child(4) {
     transform: rotateX(-67.5deg) translate3d(0px, 0px, 280px);
+    color: black;
 }
 .picker > .slot-item:nth-child(5) {
     transform: rotateX(-90deg) translate3d(0px, 0px, 280px);
+    color: black;
 }
 .picker > .slot-item:nth-child(6) {
     transform: rotateX(-112.5deg) translate3d(0px, 0px, 280px);
+    color: black;
 }
 .picker > .slot-item:nth-child(7) {
     transform: rotateX(-135deg) translate3d(0px, 0px, 280px);
@@ -67,12 +70,13 @@ body {
 .picker {
     height: 100%;
     width: 100%;
+
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     flex-direction: column;
     transform-origin: center;
-    transition: all ease 0.1s;
+    transition: all ease 0.8s;
 }
 
 .picker .slot-item {
@@ -83,6 +87,9 @@ body {
     width: 100%;
     text-align: center;
     padding: 200px 0;
+    text-shadow: -1px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+    transition: color ease 0.2s;
 }
 
 .wrapper {
@@ -113,7 +120,6 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    transition: all ease 0.1s;
 }
 
 .scroll-parent-container {

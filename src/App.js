@@ -4,7 +4,7 @@ function App() {
 
     return (
         <div>
-            <div style={{ height: "100vh", backgroundColor: "black" }} />
+            <div style={{ height: "100vh", backgroundColor: "#161616" }} />
             <SlotMachineScroll />
         </div>
     );
