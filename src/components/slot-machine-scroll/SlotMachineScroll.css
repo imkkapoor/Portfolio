@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Grstk-Mega";
     src: url("../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf")
@@ -87,9 +91,9 @@ body {
     width: 100%;
     text-align: center;
     padding: 200px 0;
-    text-shadow: -1px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
-        2px 2px 0 #fff;
-    transition: color ease 0.2s;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    transition: color ease 0.5s;
 }
 
 .wrapper {
@@ -114,12 +118,13 @@ body {
 }
 .contact {
     width: 100%;
-    height: 96vh;
+    height: 100vh;
     background-color: #000;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
+    
 }
 
 .scroll-parent-container {

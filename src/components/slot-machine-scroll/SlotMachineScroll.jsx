@@ -6,7 +6,7 @@ export default function SlotMachineScroll() {
     const [scrollAmount, setScrollAmount] = useState(0);
     const [renderSet, setRenderSet] = useState(0);
 
-    const rotationStep = 0.1;
+    const rotationStep = 1;
 
     const ref = useRef(null);
    
@@ -22,7 +22,7 @@ export default function SlotMachineScroll() {
                 newRotation < 100
             ) {
                 setCurrentRotation(newRotation);
-                setScrollAmount(scrollPosition);
+                setScrollAmount(newRotation);
                 // setCurrentRotation(0);
             }
 
