@@ -1,5 +1,6 @@
 import SlotMachineScroll from "./components/slot-machine-scroll/SlotMachineScroll";
 
+
 function App() {
 
     return (

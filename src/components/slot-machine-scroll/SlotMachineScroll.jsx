@@ -9,7 +9,7 @@ export default function SlotMachineScroll() {
     const rotationStep = 1;
 
     const ref = useRef(null);
-   
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY - renderSet;
@@ -25,8 +25,6 @@ export default function SlotMachineScroll() {
                 setScrollAmount(newRotation);
                 // setCurrentRotation(0);
             }
-
-            
         };
 
         // window.addEventListener("scroll", handleScroll);
@@ -39,7 +37,6 @@ export default function SlotMachineScroll() {
                 if (entry.isIntersecting) {
                     // console.log(window.scrollY);
                     if (!renderSet) {
-                        
                         let offset = window.scrollY;
                         console.log("yess");
                         setRenderSet(offset);
@@ -56,54 +53,49 @@ export default function SlotMachineScroll() {
 
         observer.observe(ref.current);
         var inUse = null;
-            if(currentRotation>-10 && currentRotation<11.25){
-                inUse = document.getElementById("facebook");
-                inUse.style.color = "white";
-               
-            }else{
-                inUse = document.getElementById("facebook");
-                inUse.style.color = "black";
-                
-            }
-            if(currentRotation>11.35 && currentRotation<33.75){
-                inUse = document.getElementById("email");
-                inUse.style.color = "white";
-            }else{
-                inUse = document.getElementById("email");
-                inUse.style.color = "black";
-            }
-            if(currentRotation>33.75 && currentRotation<56.25){
-                inUse = document.getElementById("instagram");
-                inUse.style.color = "white";
-            }else{
-                inUse = document.getElementById("instagram");
-                inUse.style.color = "black";
-            }
-            if(currentRotation>56.25 && currentRotation<78.75){
-                inUse = document.getElementById("twitter");
-                inUse.style.color = "white";
-            }else{
-                inUse = document.getElementById("twitter");
-                inUse.style.color = "black";
-            }
-            if(currentRotation>78.75 && currentRotation<110){
-                inUse = document.getElementById("github");
-                inUse.style.color = "white";
-            }else{
-                inUse = document.getElementById("github");
-                inUse.style.color = "black";
-            }
+        if (currentRotation > -10 && currentRotation < 11.25) {
+            inUse = document.getElementById("facebook");
+            inUse.style.color = "white";
+        } else {
+            inUse = document.getElementById("facebook");
+            inUse.style.color = "black";
+        }
+        if (currentRotation > 11.35 && currentRotation < 33.75) {
+            inUse = document.getElementById("email");
+            inUse.style.color = "white";
+        } else {
+            inUse = document.getElementById("email");
+            inUse.style.color = "black";
+        }
+        if (currentRotation > 33.75 && currentRotation < 56.25) {
+            inUse = document.getElementById("instagram");
+            inUse.style.color = "white";
+        } else {
+            inUse = document.getElementById("instagram");
+            inUse.style.color = "black";
+        }
+        if (currentRotation > 56.25 && currentRotation < 78.75) {
+            inUse = document.getElementById("twitter");
+            inUse.style.color = "white";
+        } else {
+            inUse = document.getElementById("twitter");
+            inUse.style.color = "black";
+        }
+        if (currentRotation > 78.75 && currentRotation < 110) {
+            inUse = document.getElementById("github");
+            inUse.style.color = "white";
+        } else {
+            inUse = document.getElementById("github");
+            inUse.style.color = "black";
+        }
 
         return () => {
             observer.disconnect();
         };
     }, [currentRotation, renderSet]);
 
-       
-    
-
     return (
-        <div className="scroll-parent-container"  >
+        <div className="scroll-parent-container">
             <div
                 className="contact"
                 style={{ transform: `translateY(${scrollAmount}px)` }}
@@ -116,11 +108,21 @@ export default function SlotMachineScroll() {
                             transform: `rotateX(${currentRotation}deg)`,
                         }}
                     >
-                        <div className="slot-item" id = "facebook">Facebook</div>
-                        <div className="slot-item" id = "email">Email</div>
-                        <div className="slot-item" id = "instagram">Instagram</div>
-                        <div className="slot-item" id = "twitter">Twitter</div>
-                        <div className="slot-item" id = "github">Github</div>
+                        <div className="slot-item" id="facebook">
+                            Facebook
+                        </div>
+                        <div className="slot-item" id="email">
+                            Email
+                        </div>
+                        <div className="slot-item" id="instagram">
+                            Instagram
+                        </div>
+                        <div className="slot-item" id="twitter">
+                            Twitter
+                        </div>
+                        <div className="slot-item" id="github">
+                            Github
+                        </div>
                     </div>
                 </div>
             </div>
