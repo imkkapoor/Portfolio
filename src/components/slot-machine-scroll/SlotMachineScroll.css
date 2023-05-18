@@ -20,9 +20,13 @@ body {
     background-color: #000;
 }
 
+.picker > .slot-item > a{
+    color: inherit;
+    text-decoration: none;
+}
 .picker > .slot-item {
     font-size: 100px;
-    padding: 200px;
+    /* padding: 200px; */
     display: block;
     backface-visibility: hidden;
     position: absolute;
@@ -37,6 +41,7 @@ body {
 
 .picker > .slot-item:nth-child(1) {
     transform: rotateX(0deg) translate3d(0px, 0px, 280px);
+    cursor: pointer;
 }
 .picker > .slot-item:nth-child(2) {
     transform: rotateX(-22.5deg) translate3d(0px, 0px, 280px);
@@ -74,7 +79,7 @@ body {
 .picker {
     height: 100%;
     width: 100%;
-
+    padding: 200px 0px;
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -84,13 +89,14 @@ body {
 }
 
 .picker .slot-item {
+    z-index: 999;
     font-family: Grstk-Mega;
     position: absolute;
     color: white;
     display: block;
     width: 100%;
     text-align: center;
-    padding: 200px 0;
+    /* padding: 200px 0; */
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
         1px 1px 0 #fff;
     transition: color ease 0.5s;
@@ -113,13 +119,13 @@ body {
     position: absolute;
     top: 0;
 }
-.wrapper::after {
+/* .wrapper::after {
     content: "";
     bottom: 0;
     position: absolute;
     width: 100%;
     height: 100%;
-}
+} */
 .contact {
     width: 100%;
     height: 100vh;

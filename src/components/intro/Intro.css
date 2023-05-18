@@ -1,0 +1,16 @@
+.intro-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+}
+
+.intro-container> .intro-wrapper> img, .intro-container> .intro-wrapper> content> img{
+    height: 100vh;
+}
+
+.intro-container> .intro-wrapper> .content{
+    position: absolute;
+}

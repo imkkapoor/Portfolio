@@ -38,7 +38,7 @@ export default function SlotMachineScroll() {
                     // console.log(window.scrollY);
                     if (!renderSet) {
                         let offset = window.scrollY;
-                        console.log("yess");
+                        // console.log("yess");
                         setRenderSet(offset);
                     }
                     window.addEventListener("scroll", handleScroll);
@@ -54,10 +54,10 @@ export default function SlotMachineScroll() {
         observer.observe(ref.current);
         var inUse = null;
         if (currentRotation > -10 && currentRotation < 11.25) {
-            inUse = document.getElementById("facebook");
+            inUse = document.getElementById("linkedin");
             inUse.style.color = "white";
         } else {
-            inUse = document.getElementById("facebook");
+            inUse = document.getElementById("linkedin");
             inUse.style.color = "black";
         }
         if (currentRotation > 11.35 && currentRotation < 33.75) {
@@ -92,40 +92,50 @@ export default function SlotMachineScroll() {
         return () => {
             observer.disconnect();
         };
-    }, [currentRotation, renderSet]);
+    }, [currentRotation, renderSet, scrollAmount]);
 
     return (
-        <div className="scroll-parent-container">
-            <div
-                className="contact"
-                style={{ transform: `translateY(${scrollAmount}px)` }}
-                ref={ref}
-            >
-                <div className="wrapper">
-                    <div
-                        className="picker"
-                        style={{
-                            transform: `rotateX(${currentRotation}deg)`,
-                        }}
-                    >
-                        <div className="slot-item" id="facebook">
-                            Facebook
-                        </div>
-                        <div className="slot-item" id="email">
-                            Email
-                        </div>
-                        <div className="slot-item" id="instagram">
-                            Instagram
-                        </div>
-                        <div className="slot-item" id="twitter">
-                            Twitter
-                        </div>
-                        <div className="slot-item" id="github">
-                            Github
+        <>
+            <div className="scroll-parent-container">
+                <div
+                    className="contact"
+                    style={{ transform: `translateY(${scrollAmount}px)` }}
+                    ref={ref}
+                >
+                    <div className="wrapper" id="wrapper">
+                        <div
+                            className="picker"
+                            style={{
+                                transform: `rotateX(${currentRotation}deg)`,
+                            }}
+                        >
+                            <div className="slot-item" id="linkedin">
+                                <a href="https://www.linkedin.com/in/vinayak-kapoor-6673341b1/">
+                                    LinkedIn
+                                </a>
+                            </div>
+                            <div className="slot-item" id="email">
+                                <a href="mailto:krrishkapoor97@gmail.com">
+                                    Email
+                                </a>
+                            </div>
+                            <div className="slot-item" id="instagram">
+                                <a href="https://www.instagram.com/i.m.krrish/">
+                                    Instagram
+                                </a>
+                            </div>
+                            <div className="slot-item" id="twitter">
+                                <a href="/">Twitter</a>
+                            </div>
+                            <div className="slot-item" id="github">
+                                <a href="https://github.com/imkkapoor">
+                                    Github
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

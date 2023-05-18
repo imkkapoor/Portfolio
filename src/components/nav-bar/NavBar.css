@@ -1,0 +1,17 @@
+.navbar-container {
+    color: white;
+}
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px ;
+}
+
+.navbar-wrapper .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;   
+    width: 30%; 
+}
