@@ -8,3 +8,41 @@
     flex-direction: column;
     
 }
+.projects-container{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.projects-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    margin: 0px 4vw;
+
+}
+
+
+.projects-container .projects-wrapper .project{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    perspective: 2000px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+}
+
+.projects-container .projects-wrapper .project img{
+    height: 50vh;
+    transform: rotateY(-30deg) translateZ(80px);
+    transition: all ease-in 0.7s;
+   
+
+}
+.projects-container .projects-wrapper .project img:hover{
+  
+    transform: rotateY(-10deg) translateZ(80px);
+   
+
+}
