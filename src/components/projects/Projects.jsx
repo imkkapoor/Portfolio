@@ -4,6 +4,8 @@ import pj1 from "../../assets/pj1.png";
 import cmd1 from "../../assets/cmd2.png";
 import cmdResult from "../../assets/cmd-result.png";
 import graph from "../../assets/graph.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkIcon from "@mui/icons-material/Link";
 
 export default function Projects() {
     return (
@@ -11,11 +13,14 @@ export default function Projects() {
             <div className="projects-wrapper">
                 <div className="project">
                     <div className="content">
-                        <div className="header">SOURCERY</div>I developed a
-                        dynamic MERN stack website with a REST API, user
-                        authentication, CRUD operations, and a responsive UI for
-                        ecommerce functionality including product browsing, cart
-                        management, and secure checkout with Stripe integration.
+                        <div className="header">Sourcery</div>
+                        <p>
+                            I developed a dynamic MERN stack website with a REST
+                            API, user authentication, CRUD operations, and a
+                            responsive UI for ecommerce functionality including
+                            product browsing, cart management, and secure
+                            checkout with Stripe integration.
+                        </p>
                         <ul className="languages">
                             <li>React</li>
                             <li>CSS</li>
@@ -25,8 +30,12 @@ export default function Projects() {
                             <li>Express</li>
                         </ul>
                         <div className="links">
-                            <button>Github</button>
-                            <button>Link</button>
+                            <a href="https://github.com/imkkapoor/Sourcery">
+                                <GitHubIcon />
+                            </a>
+                            <a href="https://sourcery604.netlify.app/">
+                                <LinkIcon />
+                            </a>
                         </div>
                     </div>
                     <img src={pj1} alt="mac" />
@@ -36,28 +45,35 @@ export default function Projects() {
                     <img src={cmd1} alt="cmd-in" />
 
                     <div className="content">
-                        <div className="header">CONCORDANCE</div>
-                        The idea is that concordance permits you to read or see
-                        a word that has been indexed in its original context, as
-                        this can often aid the reader to decide whether or not
-                        the reference is indeed what they want or need.
+                        <div className="header">Concordance</div>
+                        <p>
+                            The idea is that concordance permits you to read or
+                            see a word that has been indexed in its original
+                            context, as this can often aid the reader to decide
+                            whether or not the reference is indeed what they
+                            want or need.
+                        </p>
                         <ul className="languages">
                             <li>C</li>
                             <li>Python</li>
                         </ul>
                         <div className="links">
-                            <button>Github</button>
+                            <a href="https://github.com/imkkapoor/Concordance">
+                                <GitHubIcon />
+                            </a>
                         </div>
                     </div>
                     <img src={cmdResult} alt="cmd-result" />
                 </div>
                 <div className="project">
                     <div className="content">
-                        <div className="header">COVID MANAGEMENT SYS</div>Covid
-                        management system helps us to store,update,view and
-                        represent data of covid patients and the medical staff
-                        involved with the help of a python code linked with
-                        MySQL.
+                        <div className="header">Covid Management Sys</div>
+                        <p>
+                            Covid management system helps us to
+                            store,update,view and represent data of covid
+                            patients and the medical staff involved with the
+                            help of a python code linked with MySQL.
+                        </p>
                         <ul className="languages">
                             <li>Python</li>
                             <li>MySQL</li>
@@ -65,7 +81,10 @@ export default function Projects() {
                             <li>Matplotlib</li>
                         </ul>
                         <div className="links">
-                            <button>Github</button>
+                            {" "}
+                            <a href="https://github.com/imkkapoor/Covid-Management-System">
+                                <GitHubIcon />
+                            </a>
                         </div>
                     </div>
                     <img
@@ -73,9 +92,6 @@ export default function Projects() {
                         alt="graph"
                         style={{ borderRadius: "15px" }}
                     />
-                </div>
-                <div className="project">
-                    <div className="content"></div>
                 </div>
             </div>
         </div>

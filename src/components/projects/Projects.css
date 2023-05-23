@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Grstk-Mega-pr";
+    src: url("../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf")
+        format("truetype-variations");
+    font-weight: 700; /* default weight */
+    font-style: normal; /* default style */
+    font-stretch:140% ;
+    font-variation-settings: "wdth" 1000, "wght" 700, "slnt" 0;
+}
+@font-face {
+    font-family: "Grstk-Mega-txt";
+    src: url("../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf")
+        format("truetype-variations");
+    font-weight: 400; /* default weight */
+    font-style: normal; /* default style */
+    font-stretch:102% ;
+    font-variation-settings: "wdth" 1000, "wght" 700, "slnt" 0;
+}
+
+
 .projects-constainer {
     color: white;
 }
@@ -9,7 +29,9 @@
     
 }
 .projects-container{
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    /* font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; */
+    font-family: Grstk-Mega-txt;
+
 }
 
 .projects-wrapper {
@@ -52,6 +74,8 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    padding: 0;
+    padding-left:10px;
 }
 
 .projects-container .projects-wrapper .project .languages li{
@@ -60,13 +84,31 @@
 
 .projects-container .projects-wrapper .project .header{
     font-size: 32px;
+    font-family: Grstk-Mega-pr;
     font-weight: bold;
+    color: white;
     padding-bottom: 6px;
 }
 .projects-container .projects-wrapper .project .content{
+    color:#a1a1a6;
     font-size: 17px;
     padding:0px 40px;
 
+}
+
+.projects-container .projects-wrapper .project .content p{
+    margin-top: 0;
+    padding-left: 10px;
+
+}
+
+.projects-container .projects-wrapper .project .content .links a{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    cursor:pointer;
+    margin:10px;
 }
 
 .projects-container .projects-wrapper .project:nth-child(2) img:nth-child(1){
