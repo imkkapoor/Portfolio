@@ -48,19 +48,43 @@
 
 .projects-container .projects-wrapper .project{
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 62vh;
+}
+
+.projects-container .projects-wrapper .project .content-wrapper{
+    display:flex;
     flex-direction: row;
+    perspective: 2000px;
+    transform-style: preserve-3d;
     align-items: center;
     align-content: center;
-    perspective: 2000px;
-    perspective-origin: 50% 50%;
-    transform-style: preserve-3d;
-    height: 65vh;
+}
+.projects-container .projects-wrapper .project .project-index{
+    margin-bottom: 40px;
+    font-family: Grstk-Mega-pr;
+    position: relative;
+    width: 100%;
+}
+.projects-container .projects-wrapper .project .project-index:before {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 96%;
+    height: 2px;
+    margin-top: -1px;
+    z-index: -1;
 }
 
 .projects-container .projects-wrapper .project img{
-    height: 50vh;
+    height: 47vh;
     transform: rotateY(-30deg) translateZ(80px);
-    transition: all ease-in 0.7s;
+    transition: all ease 0.7s;
    
 
 }
@@ -75,7 +99,7 @@
     display: flex;
     flex-direction: row;
     padding: 0;
-    padding-left:10px;
+    padding-left:4px;
 }
 
 .projects-container .projects-wrapper .project .languages li{
@@ -83,15 +107,16 @@
 }
 
 .projects-container .projects-wrapper .project .header{
-    font-size: 32px;
+    font-size: 28px;
     font-family: Grstk-Mega-pr;
     font-weight: bold;
     color: white;
     padding-bottom: 6px;
+    
 }
 .projects-container .projects-wrapper .project .content{
     color:#a1a1a6;
-    font-size: 17px;
+    font-size: 14px;
     padding:0px 40px;
 
 }
@@ -103,13 +128,14 @@
 }
 
 .projects-container .projects-wrapper .project .content .links a{
-    background-color: black;
+    background-color: inherit;
     border: none;
     outline: none;
     color: white;
     cursor:pointer;
     margin:10px;
 }
+
 
 .projects-container .projects-wrapper .project:nth-child(2) img:nth-child(1){
     transform: rotateY(30deg) translateZ(80px);
