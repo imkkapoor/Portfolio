@@ -50,8 +50,9 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 62vh;
+    width: 100%;
 }
 
 .projects-container .projects-wrapper .project .content-wrapper{
@@ -60,7 +61,7 @@
     perspective: 2000px;
     transform-style: preserve-3d;
     align-items: center;
-    align-content: center;
+    justify-content: space-evenly;
 }
 .projects-container .projects-wrapper .project .project-index{
     margin-bottom: 40px;
@@ -70,7 +71,7 @@
 }
 .projects-container .projects-wrapper .project .project-index:before {
     content: "";
-    background: #ffffff;
+    background: transparent;
     display: block;
     position: absolute;
     right: 0;
@@ -99,6 +100,7 @@
     display: flex;
     flex-direction: row;
     padding: 0;
+    color: white;
     padding-left:4px;
 }
 
@@ -118,6 +120,7 @@
     color:#a1a1a6;
     font-size: 14px;
     padding:0px 40px;
+    width: 40vw;
 
 }
 
@@ -136,10 +139,16 @@
     margin:10px;
 }
 
+.projects-container .projects-wrapper .project:nth-child(3) .content img:nth-child(1){
+    transform: rotateY(0deg) translateZ(80px);
+
+}
 
 .projects-container .projects-wrapper .project:nth-child(2) img:nth-child(1){
     transform: rotateY(30deg) translateZ(80px);
 }
+
+
 .projects-container .projects-wrapper .project:nth-child(2) img:nth-child(1):hover{
     transform: rotateY(10deg) translateZ(80px);
 }

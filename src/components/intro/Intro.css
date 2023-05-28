@@ -1,3 +1,59 @@
+@font-face {
+    font-family: "Grstk-Mega-intro";
+    src: url("../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf")
+        format("truetype-variations");
+    font-weight: 600; /* default weight */
+    font-style: normal; /* default style */
+    font-stretch:140% ;
+    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
+}
+@font-face {
+    font-family: "Bosca";
+    src: url("../../fonts/Bosca\ Light.ttf")
+        format("truetype-variations");
+    /* font-weight: 600; default weight */
+    /* font-style: normal; default style */
+    /* font-stretch:140% ; */
+    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
+}
+@font-face {
+    font-family: "Grand";
+    src: url("../../fonts/GrandHaven_DEMO.ttf")
+        format("truetype-variations");
+    /* font-weight: 600; default weight */
+    /* font-style: normal; default style */
+    /* font-stretch:140% ; */
+    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
+}
+@font-face {
+    font-family: "ogg";
+    src: url("../../fonts/Ogg-Roman.otf")
+        format("opentype");
+    /* font-weight: 600; default weight */
+    /* font-style: normal; default style */
+    /* font-stretch:140% ; */
+    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
+}
 
 
 
+.intro-container {
+    color: white;
+    font-family: ogg;
+    text-transform: uppercase;
+    font-size: 90px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: #000;
+}
+.intro-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-container .intro-wrapper .content{
+    text-align: center;
+    line-height: 90px;
+}

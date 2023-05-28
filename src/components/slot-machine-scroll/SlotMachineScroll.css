@@ -18,6 +18,8 @@ html{
 body {
     margin: 0;
     background-color: #000;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 .picker > .slot-item > a{

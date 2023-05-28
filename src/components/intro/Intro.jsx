@@ -5,8 +5,6 @@ export default function Intro() {
     return (
         <div className="intro-container">
             <div className="intro-wrapper">
-                
-
                 <div className="content">
                     {/* <h1>Hi,</h1>
                     <h1>I am Vinayak</h1>
@@ -14,6 +12,9 @@ export default function Intro() {
                         I am web developer. enjoy making websites. exploring new
                         libraries, UI/UX designs and animation
                     </h3> */}
+                    Vinayak Kapoor<br></br>
+                    Digital Craftsman
+                    {/* Kapoor<br></br> */}
                 </div>
             </div>
         </div>

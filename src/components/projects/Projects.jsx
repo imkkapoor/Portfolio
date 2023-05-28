@@ -4,6 +4,7 @@ import pj1 from "../../assets/pj1-re.png";
 import cmd1 from "../../assets/cmd2-2.png";
 import cmdResult from "../../assets/cmd-result-2.png";
 import graph from "../../assets/graph.png";
+// import stockchex from "../../assets/stockchex.jpg"
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
 
@@ -30,6 +31,8 @@ export default function Projects() {
                                 <li>Node</li>
                                 <li>MongoDB</li>
                                 <li>Express</li>
+                                <li>Redux</li>
+
                             </ul>
                             <div className="links">
                                 <a href="https://github.com/imkkapoor/Sourcery">
@@ -40,7 +43,7 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div>
-                        <img src={pj1} alt="mac" />
+                        <img src={pj1} alt="sourcery-mac" />
                     </div>
                 </div>
 
@@ -52,11 +55,11 @@ export default function Projects() {
                         <div className="content">
                             <div className="header">Concordance</div>
                             <p>
-                                Concordance permits you to read
-                                or see a word that has been indexed in its
-                                original context, as this can often aid the
-                                reader to decide whether or not the reference is
-                                indeed what they want or need.
+                                Concordance permits you to read or see a word
+                                that has been indexed in its original context,
+                                as this can often aid the reader to decide
+                                whether or not the reference is indeed what they
+                                want or need.
                             </p>
                             <ul className="languages">
                                 <li>C</li>
@@ -71,6 +74,38 @@ export default function Projects() {
                         <img src={cmdResult} alt="cmd-result" />
                     </div>
                 </div>
+                {/* <div className="project">
+                    <div className="project-index">03</div>
+                    <div className="content-wrapper">
+                        <div className="content">
+                            <div className="header">Stockchex</div>
+                            <p>
+                                A website that gives out real-time data on stock
+                                markets with help of RESTful Web API service.
+                                
+                            </p>
+                            <ul className="languages">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>ChartJs</li>
+                                <li>Bootstrap</li>
+
+                            </ul>
+                            <div className="links">
+                                {" "}
+                                <a href="https://github.com/imkkapoor/Covid-Management-System">
+                                    <GitHubIcon />
+                                </a>
+                            </div>
+                        </div>
+                        <img
+                            src={stockchex}
+                            alt="stockchex"
+                            style={{ borderRadius: "15px" }}
+                        />
+                    </div>
+                </div> */}
                 <div className="project">
                     <div className="project-index">03</div>
                     <div className="content-wrapper">
@@ -97,7 +132,7 @@ export default function Projects() {
                         </div>
                         <img
                             src={graph}
-                            alt="graph"
+                            alt="CMS"
                             style={{ borderRadius: "15px" }}
                         />
                     </div>

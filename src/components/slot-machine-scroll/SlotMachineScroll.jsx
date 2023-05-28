@@ -111,25 +111,25 @@ export default function SlotMachineScroll() {
                         >
                             <div className="slot-item" id="linkedin">
                                 <a href="https://www.linkedin.com/in/vinayak-kapoor-6673341b1/">
-                                    LinkedIn
+                                    linkedIn
                                 </a>
                             </div>
                             <div className="slot-item" id="email">
                                 <a href="mailto:krrishkapoor97@gmail.com">
-                                    Email
+                                    email
                                 </a>
                             </div>
                             <div className="slot-item" id="instagram">
                                 <a href="https://www.instagram.com/i.m.krrish/">
-                                    Instagram
+                                    instagram
                                 </a>
                             </div>
                             <div className="slot-item" id="twitter">
-                                <a href="/">Twitter</a>
+                                <a href="/">twitter</a>
                             </div>
                             <div className="slot-item" id="github">
                                 <a href="https://github.com/imkkapoor">
-                                    Github
+                                    github
                                 </a>
                             </div>
                         </div>
