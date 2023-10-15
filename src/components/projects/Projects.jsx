@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="projects-container">
             <div className="projects-wrapper">
                 <div className="project">
-                    <div className="project-index">01</div>
+                    {/* <div className="project-index">01</div> */}
                     <div className="content-wrapper">
                         <div className="content">
                             <div className="header">Sourcery</div>
@@ -32,7 +32,6 @@ export default function Projects() {
                                 <li>MongoDB</li>
                                 <li>Express</li>
                                 <li>Redux</li>
-
                             </ul>
                             <div className="links">
                                 <a href="https://github.com/imkkapoor/Sourcery">
@@ -43,14 +42,16 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div>
-                        <img src={pj1} alt="sourcery-mac" />
+                        <div className="img-container">
+                            <img src={pj1} alt="sourcery-mac" />
+                        </div>
                     </div>
                 </div>
 
                 <div className="project">
-                    <div className="project-index">02</div>
+                    {/* <div className="project-index">02</div> */}
                     <div className="content-wrapper">
-                        <img src={cmd1} alt="cmd-in" />
+                        {/* <img src={cmd1} alt="cmd-in" /> */}
 
                         <div className="content">
                             <div className="header">Concordance</div>
@@ -71,7 +72,9 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div>
-                        <img src={cmdResult} alt="cmd-result" />
+                        <div className="img-container">
+                            <img src={cmdResult} alt="cmd-result" />
+                        </div>
                     </div>
                 </div>
                 {/* <div className="project">
@@ -107,7 +110,7 @@ export default function Projects() {
                     </div>
                 </div> */}
                 <div className="project">
-                    <div className="project-index">03</div>
+                    {/* <div className="project-index">03</div> */}
                     <div className="content-wrapper">
                         <div className="content">
                             <div className="header">Covid Management Sys</div>
@@ -130,11 +133,13 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div>
-                        <img
-                            src={graph}
-                            alt="CMS"
-                            style={{ borderRadius: "15px" }}
-                        />
+                        <div className="img-container">
+                            <img
+                                src={graph}
+                                alt="CMS"
+                                style={{ borderRadius: "15px" }}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

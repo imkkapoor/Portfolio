@@ -4,7 +4,7 @@ export default function NavBar() {
     return (
         <div className="navbar-container">
             <div className="navbar-wrapper">
-                <div className="left">Vinayak Kapoor</div>
+                <div className="left">VK</div>
                 <div className="right">
                     <p>About</p>
                     <p>Projects</p>

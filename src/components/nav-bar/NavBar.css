@@ -1,12 +1,17 @@
 .navbar-container {
     color: white;
     font-family: "Grstk-Mega-txt";
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #000;
 }
 .navbar-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px ;
+    padding: 10px ;
 }
 
 .navbar-wrapper .right{
@@ -15,4 +20,8 @@
     align-items: center;
     justify-content: space-evenly;   
     width: 30%; 
+}
+
+.navbar-wrapper .left{
+    font-family: ogg;
 }
