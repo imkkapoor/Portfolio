@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import pj1 from "../../assets/pj1-re.png";
-import cmd1 from "../../assets/cmd2-2.png";
+// import cmd1 from "../../assets/cmd2-2.png";
 import cmdResult from "../../assets/cmd-result-2.png";
 import graph from "../../assets/graph.png";
 // import stockchex from "../../assets/stockchex.jpg"

@@ -1,5 +1,5 @@
 import Intro from "./components/intro/Intro";
-import Projects from "./components/projects/Projects";
+// import Projects from "./components/projects/Projects";
 import SlotMachineScroll from "./components/slot-machine-scroll/SlotMachineScroll";
 import NavBar from "./components/nav-bar/NavBar"
 import ProjectsCard from "./components/projects/ProjectsCard";
