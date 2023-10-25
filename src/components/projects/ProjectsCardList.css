@@ -54,6 +54,7 @@ html {
   background-color: #fff;
   border: 1.5px solid #000;
   font-size: 0.7rem;
+  font-weight: bold;
 }
 .project-collection > .description-row > .project-link {
   display: flex;
