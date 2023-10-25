@@ -1,5 +1,5 @@
 html {
-  padding: 0 1.5rem;
+  /padding: 0 1.5rem;
 }
 .project-container {
   color: black;
@@ -38,12 +38,13 @@ html {
 }
 .project-collection:nth-child(5) > .description-row {
   border-bottom: 1px solid;
+  border-color: black;
 }
 
 .description-row > h3 {
   margin: 0px;
   font-size: 1.5rem;
-  flex: 1;
+  flex: 0.7;
 }
 .project-collection > .description-row > .project-link > button {
   padding: 0.5rem;
@@ -55,10 +56,9 @@ html {
   font-size: 0.7rem;
 }
 .project-collection > .description-row > .project-link {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
   flex: 1;
-
 }
 
 .project-collection > .description-row > .project-image-snippet {
@@ -73,11 +73,12 @@ html {
 }
 
 .project-collection > .description-row > .project-image-snippet > img {
-  position: static;
+  position: fixed;
   vertical-align: middle;
-  top: auto;
-  bottom: auto;
+  top: 26.5vh;
   display: none;
   margin-top: 2rem;
   height: 47vh;
+  border-radius: 8px;
+  transition: all ease 0.8s;
 }

@@ -35,7 +35,13 @@ export default function ProjectsCardList() {
         </div>
       </div>
       <div className="project-rows">
-        <div className="project-collection">
+        <div
+          className="project-collection"
+          style={{
+            color: inView1 ? 'white' : 'black',
+            background: inView1 ? 'black' : 'white',
+          }}
+        >
           <div className="description-row" ref={ref1}>
             <h3>Concordance</h3>
             <div className="project-image-snippet">
@@ -51,7 +57,13 @@ export default function ProjectsCardList() {
           </div>
         </div>
 
-        <div className="project-collection">
+        <div
+          className="project-collection"
+          style={{
+            color: inView2 ? 'white' : 'black',
+            background: inView2 ? 'black' : 'white',
+          }}
+        >
           <div className="description-row" ref={ref2}>
             <h3>Sourcery</h3>
             <div className="project-image-snippet">
@@ -67,7 +79,13 @@ export default function ProjectsCardList() {
           </div>
         </div>
 
-        <div className="project-collection">
+        <div
+          className="project-collection"
+          style={{
+            color: inView3 ? 'white' : 'black',
+            background: inView3 ? 'black' : 'white',
+          }}
+        >
           <div className="description-row" ref={ref3}>
             <h3>CMS</h3>
             <div className="project-image-snippet">
@@ -83,7 +101,13 @@ export default function ProjectsCardList() {
           </div>
         </div>
 
-        <div className="project-collection">
+        <div
+          className="project-collection"
+          style={{
+            color: inView4 ? 'white' : 'black',
+            background: inView4 ? 'black' : 'white',
+          }}
+        >
           <div className="description-row" ref={ref4}>
             <h3>Chromeme</h3>
             <div className="project-image-snippet">
@@ -99,7 +123,13 @@ export default function ProjectsCardList() {
           </div>
         </div>
 
-        <div className="project-collection">
+        <div
+          className="project-collection"
+          style={{
+            color: inView5 ? 'white' : 'black',
+            background: inView5 ? 'black' : 'white',
+          }}
+        >
           <div className="description-row" ref={ref5}>
             <h3>Portfolio website</h3>
             <div className="project-image-snippet">
