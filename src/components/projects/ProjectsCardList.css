@@ -1,96 +1,113 @@
 @font-face {
-  font-family: "trip-sans";
-  src: url("../../fonts/trip-sans-bold.otf")
-      format("opentype");
+    font-family: "trip-sans";
+    src: url("../../fonts/trip-sans-variable.ttf") format("truetype-variations");
+    font-weight: 500;
 }
-  
-html {
-  /* padding: 0 1.5rem; */
+
+body {
+    background-color: white;
 }
 .project-container {
-  color: black;
-  background-color: white;
-  font-family: trip-sans;
+    color: black;
+    background-color: white;
+    font-family: trip-sans;
 }
 
 .project-rows {
-  margin-top: 8rem;
+    margin-top: 8rem;
 }
 
 .project-section-title-container {
-  background-color: white;
-  position: sticky;
-  z-index: 1001;
-  top: 0;
-  bottom: 0;
-  height: auto;
-  font-size: 40px;
+    background-color: white;
+    position: sticky;
+    z-index: 1001;
+    top: 0;
+    bottom: 0;
+    height: auto;
 }
 
 .project-section-title-wrapper {
-  position: static;
-  width: 100%;
-  height: 100%;
-  z-index: 10000;
-  padding: 30px;
+    position: static;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    padding: 30px;
 }
-.project-section-title-wrapper >h1{
-  margin: 0;
+.project-section-title-wrapper > h1 {
+    margin: 0;
+    font-size: 70px;
+}
+.project-collection {
+    transition: all ease 0.5s;
 }
 .description-row {
-  padding: 2rem 1rem;
-  border-top: 1px solid;
-  border-radius: 0;
-  display: flex;
-  width: 100%;
-  border-radius: 0;
-  justify-content: space-between;
-  border-color: black;
+    padding: 2rem 1rem;
+    border-top: 1px solid;
+    border-radius: 0;
+    display: flex;
+    width: 100%;
+    border-radius: 0;
+    justify-content: space-between;
+    border-color: black;
 }
 .project-collection:nth-child(5) > .description-row {
-  border-bottom: 1px solid;
-  border-color: black;
+    border-bottom: 1px solid;
+    border-color: black;
 }
 
 .description-row > h3 {
-  margin: 0px;
-  font-size: 1.5rem;
-  flex: 0.7;
+    margin: 0px;
+    font-size: 1.5rem;
+    flex: 0.7;
+    font-weight: 400;
 }
 .project-collection > .description-row > .project-link > button {
-  padding: 0.5rem;
-  border-radius: 8px;
-  color: #000;
-  text-transform: uppercase;
-  background-color: #fff;
-  border: 1.5px solid #000;
-  font-size: 0.7rem;
-  font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: #000;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1.5px solid #000;
+    font-size: 0.7rem;
+    font-weight: bold;
 }
 .project-collection > .description-row > .project-link {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .project-collection > .description-row > .project-image-snippet {
-  z-index: 99;
-  height: 0;
-  align-items: center;
-  display: flex;
-  flex: 1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50vh;
+    z-index: 99;
+    height: 0;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50vh;
 }
 
 .project-collection > .description-row > .project-image-snippet > img {
+    position: fixed;
+    vertical-align: middle;
+    top: 26.5vh;
+    display: none;
+    opacity: 0;
+    margin-top: 2rem;
+    height: 55vh;
+    border-radius: 8px;
+}
+
+.project-collection > .description-row > .project-image-snippet > img .in-view{
+  opacity: 1;
   position: fixed;
   vertical-align: middle;
   top: 26.5vh;
   display: none;
+  opacity: 0;
   margin-top: 2rem;
-  height: 47vh;
+  height: 55vh;
   border-radius: 8px;
-  transition: all ease 0.8s;
+  transition:  opacity ease 1s;
 }

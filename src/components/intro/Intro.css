@@ -4,10 +4,15 @@
 }
 
 .intro-container{
-    height: 70vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 1px;
+    border-radius: 0px 0px 20px 20px;
+    border-color: black;
+    background-color: black;
 }
 .intro-wrapper {
     display: flex;
@@ -19,17 +24,20 @@
     display: flex;
 }
 .left-about > .about-title {
-    font-size: 80px;
+    font-size: 70px;
     font-family: trip-sans;
 }
 
 .right-desc {
     flex: 1.4;
-    font-size: 30px;
+    font-size: 27px;
     font-family: trip-sans-reg;
     font-weight: bold;
 }
 
 .right-desc>.desc-content>sub{
     font-size: 20px;
+}
+.right-desc>.desc-content{
+    width: 90%;
 }

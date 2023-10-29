@@ -11,12 +11,16 @@ export default function Intro() {
                 </div>
                 <div className="right-desc">
                     <div className="desc-content">
-                        Vinayak <sub>(He/Him)</sub> is a 3<sup>rd</sup> Computer Science major<br></br> at the
-                        University of Victoria. I'm in pursuit of internships,
-                        armed with a robust skill set in software development.
-                        Fueled by motivation and a thirst for learning, <br></br>I'm
+                        Vinayak <sub>(He/Him)</sub> is a 3<sup>rd</sup> Computer
+                        Science major<br></br> at the University of Victoria.
+                        I'm in pursuit of internships, armed with a robust skill
+                        set in software development.<br></br>
+                        Fueled by motivation and a thirst for learning, I'm
                         ready to dive into challenging projects. Let's engineer
-                        some excellence!🚀
+                        some excellence!
+                    </div>
+                    <div className="job-description">
+                        VertiGIS
                     </div>
                 </div>
             </div>
