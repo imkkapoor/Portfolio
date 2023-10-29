@@ -6,18 +6,18 @@ export default function Intro() {
     return (
         <div className="intro-container">
             <div className="intro-wrapper">
-            {/* <img src={avatar}/> */}
-
-                <div className="content">
-                    {/* <h1>Hi,</h1>
-                    <h1>I am Vinayak</h1>
-                    <h3>
-                        I am web developer. enjoy making websites. exploring new
-                        libraries, UI/UX designs and animation
-                    </h3> */}
-                    <div className="name">Hello! I'm Vinayak</div><br></br>
-                    A Digital Craftsman
-                    {/* Kapoor<br></br> */}
+                <div className="left-about">
+                    <div className="about-title">About</div>
+                </div>
+                <div className="right-desc">
+                    <div className="desc-content">
+                        Vinayak <sub>(He/Him)</sub> is a 3<sup>rd</sup> Computer Science major<br></br> at the
+                        University of Victoria. I'm in pursuit of internships,
+                        armed with a robust skill set in software development.
+                        Fueled by motivation and a thirst for learning, <br></br>I'm
+                        ready to dive into challenging projects. Let's engineer
+                        some excellence!🚀
+                    </div>
                 </div>
             </div>
         </div>

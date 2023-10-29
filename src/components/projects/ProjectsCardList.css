@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "trip-sans";
+  src: url("../../fonts/trip-sans-bold.otf")
+      format("opentype");
+}
+  
 html {
-  /padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
 }
 .project-container {
   color: black;
   background-color: white;
+  font-family: trip-sans;
 }
 
 .project-rows {
@@ -17,6 +24,7 @@ html {
   top: 0;
   bottom: 0;
   height: auto;
+  font-size: 40px;
 }
 
 .project-section-title-wrapper {
@@ -25,6 +33,9 @@ html {
   height: 100%;
   z-index: 10000;
   padding: 30px;
+}
+.project-section-title-wrapper >h1{
+  margin: 0;
 }
 .description-row {
   padding: 2rem 1rem;

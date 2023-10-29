@@ -1,72 +1,35 @@
 @font-face {
-    font-family: "Grstk-Mega-intro";
-    src: url("../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf")
-        format("truetype-variations");
-    font-weight: 1000; /* default weight */
-    font-style: normal; /* default style */
-    font-stretch:160% ;
-    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
-}
-@font-face {
-    font-family: "Bosca";
-    src: url("../../fonts/Bosca\ Light.ttf")
-        format("truetype-variations");
-    /* font-weight: 600; default weight */
-    /* font-style: normal; default style */
-    /* font-stretch:140% ; */
-    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
-}
-@font-face {
-    font-family: "Grand";
-    src: url("../../fonts/GrandHaven_DEMO.ttf")
-        format("truetype-variations");
-    /* font-weight: 600; default weight */
-    /* font-style: normal; default style */
-    /* font-stretch:140% ; */
-    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
-}
-@font-face {
-    font-family: "ogg";
-    src: url("../../fonts/Ogg-Roman.otf")
-        format("opentype");
-    /* font-weight: 600; default weight */
-    /* font-style: normal; default style */
-    /* font-stretch:140% ; */
-    /* font-variation-settings: "wdth" 1000, "wght" 500, "slnt" 0; */
+    font-family: "trip-sans-reg";
+    src: url("../../fonts/trip-sans.otf") format("opentype");
 }
 
-
-
-.intro-container {
-    color: white;
-    font-family: Grstk-Mega-intro;
-    /* font-family: ogg; */
-    /* text-transform: uppercase; */
-    font-size: 60px;
-    height: 90vh;
+.intro-container{
+    height: 70vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-image: #000;
+    align-items: center;
 }
 .intro-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    padding: 30px;
 }
-.intro-container .intro-wrapper .content{
-    text-align: center;
-    line-height: 40px;
+.left-about {
+    flex: 0.6;
+    display: flex;
 }
-
-.name{
+.left-about > .about-title {
     font-size: 80px;
-    color: black;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-        1px 1px 0 #fff;
+    font-family: trip-sans;
 }
 
-.intro-container .intro-wrapper img{
-    height:60vh;
-    border-radius: 30px;
+.right-desc {
+    flex: 1.4;
+    font-size: 30px;
+    font-family: trip-sans-reg;
+    font-weight: bold;
+}
+
+.right-desc>.desc-content>sub{
+    font-size: 20px;
 }
