@@ -20,7 +20,7 @@
     padding: 30px;
 }
 .left-about {
-    flex: 0.6;
+    flex: 1;
     display: flex;
 }
 .left-about > .about-title {
@@ -29,7 +29,7 @@
 }
 
 .right-desc {
-    flex: 1.4;
+    flex: 2;
     font-size: 27px;
     font-family: trip-sans-reg;
     font-weight: bold;
@@ -40,5 +40,5 @@
     font-weight: bold;
 }
 .right-desc>.desc-content{
-    width: 90%;
+    width: 100%;
 }

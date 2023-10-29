@@ -1,27 +1,80 @@
-.navbar-container {
-    color: white;
-    font-family: "Grstk-Mega-txt";
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    background: #000;
+.navbar-container-top {
+  color: black;
+  font-family: 'Grstk-Mega-txt';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 2.5vw;
+  font-size: 12px;
+  margin-top: 10px;
 }
-.navbar-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px ;
+.navbar-container-top > .navbar-wrapper {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-radius: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.navbar-wrapper .right{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;   
-    width: 30%; 
+.navbar-container-top > .navbar-wrapper > .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  font-family: trip-sans-reg;
 }
 
-.navbar-wrapper .left{
-    font-family: ogg;
+.navbar-container-top > .navbar-wrapper > .right > p,
+.navbar-container-bottom > .navbar-wrapper > .right > p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.navbar-wrapper .left {
+  font-family: ogg;
+  padding-left: 10px;
+}
+
+.navbar-container-bottom {
+  color: black;
+  font-family: 'Grstk-Mega-txt';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 9px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: white;
+  z-index: 100001;
+  font-family: trip-sans-reg;
+  font-weight: bold;
+  transition: all ease 0.3s;
+}
+
+.navbar-container-bottom > .navbar-wrapper {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(49, 49, 49, 0.8);
+  backdrop-filter: blur(0.75rem);
+  border-radius: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar-container-bottom > .navbar-wrapper > .right {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
 }

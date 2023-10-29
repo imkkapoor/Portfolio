@@ -1,8 +1,8 @@
 import React from "react";
-import "./Intro.css";
+import "./About.css";
 // import avatar from "../../assets/IMG_20230427_180120.jpg"
 
-export default function Intro() {
+export default function About() {
     return (
         <div className="intro-container">
             <div className="intro-wrapper">
@@ -14,7 +14,7 @@ export default function Intro() {
                         Vinayak <sub>(He/Him)</sub> is a 3<sup>rd</sup> Computer
                         Science major<br></br> at the University of Victoria.
                         I'm in pursuit of internships, armed with a robust skill
-                        set in software development.<br></br>
+                        set in software development.
                         Fueled by motivation and a thirst for learning, I'm
                         ready to dive into challenging projects. Let's engineer
                         some excellence!
