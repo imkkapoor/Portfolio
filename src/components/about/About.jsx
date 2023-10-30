@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-// import avatar from "../../assets/IMG_20230427_180120.jpg"
+import vertiGISLogo from "../../assets/vertigis-logo.png";
 
 export default function About() {
     return (
@@ -14,13 +14,23 @@ export default function About() {
                         Vinayak <sub>(He/Him)</sub> is a 3<sup>rd</sup> Computer
                         Science major<br></br> at the University of Victoria.
                         I'm in pursuit of internships, armed with a robust skill
-                        set in software development.
-                        Fueled by motivation and a thirst for learning, I'm
-                        ready to dive into challenging projects. Let's engineer
-                        some excellence!
+                        set in software development. Fueled by motivation and a
+                        thirst for learning, I'm ready to dive into challenging
+                        projects. Let's engineer some excellence!
                     </div>
                     <div className="job-description">
-                        VertiGIS
+                        <div className="job-description-head">
+                            Cooking up code at
+                        </div>
+                        <div className="current-job">
+                            <div className="company-logo">
+                                <img src={vertiGISLogo} alt="logo"></img>
+                            </div>
+                            <div className="description">
+                                <p>Quality Assuarance Analyst Intern</p>
+                                <p>VertiGIS</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
     src: url("../../fonts/trip-sans.otf") format("opentype");
 }
 
-.intro-container{
+.intro-container {
     padding-top: 10vh;
     padding-bottom: 10vh;
     display: flex;
@@ -35,10 +35,53 @@
     font-weight: bold;
 }
 
-.right-desc>.desc-content>sub , .right-desc>.desc-content>sup{
+.right-desc > .desc-content > sub,
+.right-desc > .desc-content > sup {
     font-size: 18px;
     font-weight: bold;
 }
-.right-desc>.desc-content{
+.right-desc > .desc-content {
     width: 100%;
+}
+
+.job-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.job-description > .job-description-head {
+    font-size: 13px;
+
+    text-transform: uppercase;
+}
+.job-description > .current-job {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.job-description > .current-job > .description {
+    padding-left: 14px;
+}
+
+.job-description > .current-job > .description > p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.job-description > .current-job > .description > p:nth-child(2) {
+    font-size: 13px;
+    color: #808080;
+}
+.job-description > .current-job > .company-logo {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.12);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.job-description > .current-job > .company-logo > img {
+    height: 30px;
 }
