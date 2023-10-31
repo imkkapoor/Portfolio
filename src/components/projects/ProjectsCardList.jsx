@@ -55,7 +55,13 @@ export default function ProjectsCardList() {
                             />
                         </div>
                         <div className="project-link">
-                            <button>Github</button>
+                            <a
+                                href="https://github.com/imkkapoor/Concordance"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <button>Github</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +86,20 @@ export default function ProjectsCardList() {
                             />
                         </div>
                         <div className="project-link">
-                            <button>Github</button>
+                            <a
+                                href="https://sourcery604.netlify.app/"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <button>Website</button>
+                            </a>
+                            <a
+                                href="https://github.com/imkkapoor/Sourcery"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <button>Github</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +124,13 @@ export default function ProjectsCardList() {
                             />
                         </div>
                         <div className="project-link">
-                            <button>Github</button>
+                            <a
+                                href="https://github.com/imkkapoor/Covid-Management-System"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <button>Github</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +155,13 @@ export default function ProjectsCardList() {
                             />
                         </div>
                         <div className="project-link">
-                            <button>Github</button>
+                            <a
+                                href="https://github.com/imkkapoor/Chromeme"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <button>Github</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +186,20 @@ export default function ProjectsCardList() {
                             />
                         </div>
                         <div className="project-link">
-                            <button>Github</button>
+                            <a
+                                href="https://github.com/imkkapoor/Chromeme"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <button>Website</button>
+                            </a>
+                            <a
+                                href="https://github.com/imkkapoor/Portfolio"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <button>Github</button>
+                            </a>
                         </div>
                     </div>
                 </div>
