@@ -1,7 +1,15 @@
 import React from "react";
 import "./ProjectsCardList.css";
 import projectSample from "../../assets/project-sample.png";
-
+import {
+    DiReact,
+    DiNodejs,
+    DiPython,
+    DiMysql,
+} from "react-icons/di";
+import { BiLogoMongodb } from "react-icons/bi";
+import { TbHexagonLetterC } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io";
 import projectSample1 from "../../assets/project-sample-1.png";
 import { useInView } from "react-intersection-observer";
 
@@ -43,6 +51,14 @@ export default function ProjectsCardList() {
                     }}
                 >
                     <div className="description-row" ref={ref1}>
+                        <div className="tech-used">
+                            <div className="icon">
+                                <DiPython />
+                            </div>
+                            <div className="icon">
+                                <TbHexagonLetterC/>
+                            </div>
+                        </div>
                         <h3>Concordance</h3>
                         <div className="project-image-snippet">
                             <img
@@ -74,6 +90,17 @@ export default function ProjectsCardList() {
                     }}
                 >
                     <div className="description-row" ref={ref2}>
+                        <div className="tech-used">
+                            <div className="icon">
+                                <BiLogoMongodb />
+                            </div>
+                            <div className="icon">
+                                <DiReact />
+                            </div>
+                            <div className="icon">
+                                <DiNodejs />
+                            </div>
+                        </div>
                         <h3>Sourcery</h3>
                         <div className="project-image-snippet">
                             <img
@@ -112,6 +139,14 @@ export default function ProjectsCardList() {
                     }}
                 >
                     <div className="description-row" ref={ref3}>
+                        <div className="tech-used">
+                            <div className="icon">
+                                <DiPython />
+                            </div>
+                            <div className="icon">
+                                <DiMysql />
+                            </div>
+                        </div>
                         <h3>CMS</h3>
                         <div className="project-image-snippet">
                             <img
@@ -143,6 +178,11 @@ export default function ProjectsCardList() {
                     }}
                 >
                     <div className="description-row" ref={ref4}>
+                        <div className="tech-used">
+                            <div className="icon">
+                                <IoLogoJavascript />
+                            </div>
+                        </div>
                         <h3>Chromeme</h3>
                         <div className="project-image-snippet">
                             <img
@@ -174,6 +214,11 @@ export default function ProjectsCardList() {
                     }}
                 >
                     <div className="description-row" ref={ref5}>
+                        <div className="tech-used">
+                            <div className="icon">
+                                <DiReact />
+                            </div>
+                        </div>
                         <h3>Portfolio website</h3>
                         <div className="project-image-snippet">
                             <img
