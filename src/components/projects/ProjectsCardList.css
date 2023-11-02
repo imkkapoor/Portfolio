@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: white;
+    /* change back to white to see border curves for about  */
+    background-color: black;
 }
 .project-container {
     color: black;
