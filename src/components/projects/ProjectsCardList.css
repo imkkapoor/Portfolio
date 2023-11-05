@@ -122,8 +122,8 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 76vh;
-    margin-left: 1.2vw;
+    top: 77vh;
+    margin-left: 0.7vw;
 }
 
 .project-collection:nth-child(1)
@@ -132,13 +132,15 @@ body {
     > .project-image-desc-text {
     color: black;
 }
+
+
 .project-image-desc-text > h3 {
     margin: 0;
 }
 
 .project-image-desc-text > ul {
     list-style: none;
-    margin: 0.5vh 0 0 0;
+    margin: 0 0 0 0;
     display: flex;
     padding: 0;
     text-transform: uppercase;
@@ -146,8 +148,8 @@ body {
 }
 .project-image-desc-text > ul > li {
     border-radius: 5px;
-    font-size: 12px;
-    border: 1px solid;
+    font-size: 10px;
+    border: 1.5px solid;
     border-color: white;
     margin: 5px;
     padding: 4px;
