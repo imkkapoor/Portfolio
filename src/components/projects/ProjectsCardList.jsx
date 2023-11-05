@@ -1,12 +1,10 @@
 import React from "react";
 import "./ProjectsCardList.css";
 import projectSample from "../../assets/project-sample.png";
-import {
-    DiReact,
-    DiNodejs,
-    DiPython,
-    DiMysql,
-} from "react-icons/di";
+import sourcerySample from "../../assets/sourcery-aap.jpg";
+import concordanceSample from "../../assets/concordanceSample.jpg";
+
+import { DiReact, DiNodejs, DiPython, DiMysql } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
 import { TbHexagonLetterC } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
@@ -30,10 +28,10 @@ export default function ProjectsCardList() {
         threshold: 0,
         rootMargin: "-50%",
     });
-    const [ref5, inView5] = useInView({
-        threshold: 0,
-        rootMargin: "-50%",
-    });
+    // const [ref5, inView5] = useInView({
+    //     threshold: 0,
+    //     rootMargin: "-50%",
+    // });
 
     return (
         <div className="project-container">
@@ -56,19 +54,32 @@ export default function ProjectsCardList() {
                                 <DiPython />
                             </div>
                             <div className="icon">
-                                <TbHexagonLetterC/>
+                                <TbHexagonLetterC />
                             </div>
                         </div>
                         <h3>Concordance</h3>
                         <div className="project-image-snippet">
                             <img
-                                src={projectSample}
+                                src={concordanceSample}
                                 alt="pj1"
                                 style={{
                                     display: inView1 ? "block" : "none",
                                     opacity: inView1 ? 1 : 0,
                                 }}
                             />
+                            <div
+                                className="project-image-desc-text"
+                                style={{
+                                    display: inView1 ? "block" : "none",
+                                    opacity: inView1 ? 1 : 0,
+                                }}
+                            >
+                                <h3>Concordance</h3>
+                                <ul>
+                                    <li>Data Structures</li>
+                                    <li>Dynamic Memory</li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="project-link">
                             <a
@@ -104,13 +115,26 @@ export default function ProjectsCardList() {
                         <h3>Sourcery</h3>
                         <div className="project-image-snippet">
                             <img
-                                src={projectSample1}
+                                src={sourcerySample}
                                 alt="pj1"
                                 style={{
                                     display: inView2 ? "block" : "none",
                                     opacity: inView2 ? 1 : 0,
                                 }}
                             />
+                            <div
+                                className="project-image-desc-text"
+                                style={{
+                                    display: inView2 ? "block" : "none",
+                                    opacity: inView2 ? 1 : 0,
+                                }}
+                            >
+                                <h3>SOURCERY</h3>
+                                <ul>
+                                    <li>UI/UX</li>
+                                    <li>E-COMM</li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="project-link">
                             <a
@@ -206,7 +230,7 @@ export default function ProjectsCardList() {
                     </div>
                 </div>
 
-                <div
+                {/* <div
                     className="project-collection"
                     style={{
                         color: inView5 ? "white" : "black",
@@ -247,7 +271,7 @@ export default function ProjectsCardList() {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
