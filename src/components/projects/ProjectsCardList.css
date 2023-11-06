@@ -129,6 +129,9 @@ body {
 .project-collection:nth-child(2)
     > .description-row
     > .project-image-snippet
+    > .project-image-desc-text,.project-collection:nth-child(4)
+    > .description-row
+    > .project-image-snippet
     > .project-image-desc-text {
     color: black;
 }
@@ -164,6 +167,44 @@ body {
     > .project-image-snippet
     > .project-image-desc-text
     > ul
+    > li, .project-collection:nth-child(4)
+    > .description-row
+    > .project-image-snippet
+    > .project-image-desc-text
+    > ul
     > li {
     border-color: black;
 }
+
+
+@media screen and (min-height: 600px) {
+    .project-image-desc-text {
+        bottom: 14.15vh;
+    }
+  }
+
+  @media screen and (min-height: 675px) {
+    .project-image-desc-text {
+        bottom: 14.7vh;
+        margin-left: 1vw; ;
+    }
+    .project-image-desc-text > h3 {
+        font-size: 20px;
+    }
+    .project-image-desc-text > ul>li{
+        font-size: 12px;
+    }
+    
+  }
+
+  @media screen and (min-height: 785px) {
+    .project-image-desc-text {
+        bottom: 16vh;
+    }
+    .project-image-desc-text > h3 {
+        font-size: 25px;
+    }
+    .project-image-desc-text > ul>li{
+        font-size: 14px;
+    }
+  }

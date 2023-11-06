@@ -4,12 +4,12 @@ import sourcerySample from "../../assets/sourcery-aap.jpg";
 import concordanceSample from "../../assets/concordanceSample.jpg";
 import cmsSample from "../../assets/cms-aap.jpg";
 import stockchexSample from "../../assets/stockChecx-aap.jpg";
+import chromemeSample from "../../assets/chromeme-aap.jpg";
 
 import { DiReact, DiNodejs, DiPython, DiMysql } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
 import { TbHexagonLetterC } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
-import projectSample1 from "../../assets/project-sample-1.png";
 import { useInView } from "react-intersection-observer";
 
 export default function ProjectsCardList() {
@@ -236,13 +236,25 @@ export default function ProjectsCardList() {
                         <h3>Chromeme</h3>
                         <div className="project-image-snippet">
                             <img
-                                src={projectSample1}
+                                src={chromemeSample}
                                 alt="pj1"
                                 style={{
                                     display: inViewChromeme ? "block" : "none",
                                     opacity: inViewChromeme ? 1 : 0,
                                 }}
                             />
+                            <div
+                                className="project-image-desc-text"
+                                style={{
+                                    display: inViewChromeme ? "block" : "none",
+                                    opacity: inViewChromeme ? 1 : 0,
+                                }}
+                            >
+                                <h3>Chromeme</h3>
+                                <ul>
+                                    <li>Chrome Extension</li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="project-link">
                             <a
