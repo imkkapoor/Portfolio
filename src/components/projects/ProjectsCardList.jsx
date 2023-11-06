@@ -191,9 +191,7 @@ export default function ProjectsCardList() {
                             <div
                                 className="project-image-desc-text"
                                 style={{
-                                    display: inViewStockchex
-                                        ? "block"
-                                        : "none",
+                                    display: inViewStockchex ? "block" : "none",
                                     opacity: inViewStockchex ? 1 : 0,
                                 }}
                             >
@@ -206,7 +204,14 @@ export default function ProjectsCardList() {
                         </div>
                         <div className="project-link">
                             <a
-                                href="https://github.com/imkkapoor/Chromeme"
+                                href="https://stockchex.netlify.app/"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <button>Website</button>
+                            </a>
+                            <a
+                                href="https://github.com/imkkapoor/Stockchex"
                                 rel="noreferrer"
                                 target="_blank"
                             >
