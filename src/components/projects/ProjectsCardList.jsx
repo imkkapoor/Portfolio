@@ -1,8 +1,9 @@
 import React from "react";
 import "./ProjectsCardList.css";
-import projectSample from "../../assets/project-sample.png";
 import sourcerySample from "../../assets/sourcery-aap.jpg";
 import concordanceSample from "../../assets/concordanceSample.jpg";
+import cmsSample from "../../assets/cms-aap.jpg";
+import stockchexSample from "../../assets/stockChecx-aap.jpg";
 
 import { DiReact, DiNodejs, DiPython, DiMysql } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
@@ -12,19 +13,24 @@ import projectSample1 from "../../assets/project-sample-1.png";
 import { useInView } from "react-intersection-observer";
 
 export default function ProjectsCardList() {
-    const [ref1, inView1] = useInView({
+    const [sourceryRef, inViewSourcery] = useInView({
         threshold: 0,
         rootMargin: "-50%",
     });
-    const [ref2, inView2] = useInView({
+    const [concordanceRef, inViewconcordance] = useInView({
         threshold: 0,
         rootMargin: "-50%",
     });
-    const [ref3, inView3] = useInView({
+    const [cmsRef, inViewCms] = useInView({
         threshold: 0,
         rootMargin: "-50%",
     });
-    const [ref4, inView4] = useInView({
+    const [stockchexRef, inViewStockchex] = useInView({
+        threshold: 0,
+        rootMargin: "-50%",
+    });
+
+    const [chromemeRef, inViewChromeme] = useInView({
         threshold: 0,
         rootMargin: "-50%",
     });
@@ -44,63 +50,11 @@ export default function ProjectsCardList() {
                 <div
                     className="project-collection"
                     style={{
-                        color: inView1 ? "white" : "black",
-                        background: inView1 ? "black" : "white",
+                        color: inViewSourcery ? "white" : "black",
+                        background: inViewSourcery ? "black" : "white",
                     }}
                 >
-                    <div className="description-row" ref={ref1}>
-                        <div className="tech-used">
-                            <div className="icon">
-                                <DiPython />
-                            </div>
-                            <div className="icon">
-                                <TbHexagonLetterC />
-                            </div>
-                        </div>
-                        <h3>Concordance</h3>
-                        <div className="project-image-snippet">
-                            <img
-                                src={concordanceSample}
-                                alt="pj1"
-                                style={{
-                                    display: inView1 ? "block" : "none",
-                                    opacity: inView1 ? 1 : 0,
-                                }}
-                            />
-                            <div
-                                className="project-image-desc-text"
-                                style={{
-                                    display: inView1 ? "block" : "none",
-                                    opacity: inView1 ? 1 : 0,
-                                }}
-                            >
-                                <h3>Concordance</h3>
-                                <ul>
-                                    <li>Data Structures</li>
-                                    <li>Dynamic Memory</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="project-link">
-                            <a
-                                href="https://github.com/imkkapoor/Concordance"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <button>Github</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    className="project-collection"
-                    style={{
-                        color: inView2 ? "white" : "black",
-                        background: inView2 ? "black" : "white",
-                    }}
-                >
-                    <div className="description-row" ref={ref2}>
+                    <div className="description-row" ref={sourceryRef}>
                         <div className="tech-used">
                             <div className="icon">
                                 <BiLogoMongodb />
@@ -118,15 +72,15 @@ export default function ProjectsCardList() {
                                 src={sourcerySample}
                                 alt="pj1"
                                 style={{
-                                    display: inView2 ? "block" : "none",
-                                    opacity: inView2 ? 1 : 0,
+                                    display: inViewSourcery ? "block" : "none",
+                                    opacity: inViewSourcery ? 1 : 0,
                                 }}
                             />
                             <div
                                 className="project-image-desc-text"
                                 style={{
-                                    display: inView2 ? "block" : "none",
-                                    opacity: inView2 ? 1 : 0,
+                                    display: inViewSourcery ? "block" : "none",
+                                    opacity: inViewSourcery ? 1 : 0,
                                 }}
                             >
                                 <h3>SOURCERY</h3>
@@ -154,37 +108,53 @@ export default function ProjectsCardList() {
                         </div>
                     </div>
                 </div>
-
                 <div
                     className="project-collection"
                     style={{
-                        color: inView3 ? "white" : "black",
-                        background: inView3 ? "black" : "white",
+                        color: inViewconcordance ? "white" : "black",
+                        background: inViewconcordance ? "black" : "white",
                     }}
                 >
-                    <div className="description-row" ref={ref3}>
+                    <div className="description-row" ref={concordanceRef}>
                         <div className="tech-used">
                             <div className="icon">
                                 <DiPython />
                             </div>
                             <div className="icon">
-                                <DiMysql />
+                                <TbHexagonLetterC />
                             </div>
                         </div>
-                        <h3>CMS</h3>
+                        <h3>Concordance</h3>
                         <div className="project-image-snippet">
                             <img
-                                src={projectSample}
+                                src={concordanceSample}
                                 alt="pj1"
                                 style={{
-                                    display: inView3 ? "block" : "none",
-                                    opacity: inView3 ? 1 : 0,
+                                    display: inViewconcordance
+                                        ? "block"
+                                        : "none",
+                                    opacity: inViewconcordance ? 1 : 0,
                                 }}
                             />
+                            <div
+                                className="project-image-desc-text"
+                                style={{
+                                    display: inViewconcordance
+                                        ? "block"
+                                        : "none",
+                                    opacity: inViewconcordance ? 1 : 0,
+                                }}
+                            >
+                                <h3>Concordance</h3>
+                                <ul>
+                                    <li>Data Structures</li>
+                                    <li>Dynamic Memory</li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="project-link">
                             <a
-                                href="https://github.com/imkkapoor/Covid-Management-System"
+                                href="https://github.com/imkkapoor/Concordance"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -197,11 +167,62 @@ export default function ProjectsCardList() {
                 <div
                     className="project-collection"
                     style={{
-                        color: inView4 ? "white" : "black",
-                        background: inView4 ? "black" : "white",
+                        color: inViewStockchex ? "white" : "black",
+                        background: inViewStockchex ? "black" : "white",
                     }}
                 >
-                    <div className="description-row" ref={ref4}>
+                    <div className="description-row" ref={stockchexRef}>
+                        <div className="tech-used">
+                            <div className="icon">
+                                <IoLogoJavascript />
+                            </div>
+                        </div>
+                        <h3>StockChex</h3>
+                        <div className="project-image-snippet">
+                            <img
+                                src={stockchexSample}
+                                alt="pj1"
+                                style={{
+                                    display: inViewStockchex ? "block" : "none",
+                                    opacity: inViewStockchex ? 1 : 0,
+                                }}
+                            />
+
+                            <div
+                                className="project-image-desc-text"
+                                style={{
+                                    display: inViewStockchex
+                                        ? "block"
+                                        : "none",
+                                    opacity: inViewStockchex ? 1 : 0,
+                                }}
+                            >
+                                <h3>StockChex</h3>
+                                <ul>
+                                    <li>ChartJS</li>
+                                    <li>Rest API</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="project-link">
+                            <a
+                                href="https://github.com/imkkapoor/Chromeme"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
+                                <button>Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="project-collection"
+                    style={{
+                        color: inViewChromeme ? "white" : "black",
+                        background: inViewChromeme ? "black" : "white",
+                    }}
+                >
+                    <div className="description-row" ref={chromemeRef}>
                         <div className="tech-used">
                             <div className="icon">
                                 <IoLogoJavascript />
@@ -213,8 +234,8 @@ export default function ProjectsCardList() {
                                 src={projectSample1}
                                 alt="pj1"
                                 style={{
-                                    display: inView4 ? "block" : "none",
-                                    opacity: inView4 ? 1 : 0,
+                                    display: inViewChromeme ? "block" : "none",
+                                    opacity: inViewChromeme ? 1 : 0,
                                 }}
                             />
                         </div>
@@ -223,6 +244,59 @@ export default function ProjectsCardList() {
                                 href="https://github.com/imkkapoor/Chromeme"
                                 rel="noreferrer"
                                 target="_blank"
+                            >
+                                <button>Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    className="project-collection"
+                    style={{
+                        color: inViewCms ? "white" : "black",
+                        background: inViewCms ? "black" : "white",
+                    }}
+                >
+                    <div className="description-row" ref={cmsRef}>
+                        <div className="tech-used">
+                            <div className="icon">
+                                <DiPython />
+                            </div>
+                            <div className="icon">
+                                <DiMysql />
+                            </div>
+                        </div>
+                        <h3>CMS</h3>
+                        <div className="project-image-snippet">
+                            <img
+                                src={cmsSample}
+                                alt="pj1"
+                                style={{
+                                    display: inViewCms ? "block" : "none",
+                                    opacity: inViewCms ? 1 : 0,
+                                }}
+                            />
+                            <div
+                                className="project-image-desc-text"
+                                style={{
+                                    display: inViewCms ? "block" : "none",
+                                    opacity: inViewCms ? 1 : 0,
+                                }}
+                            >
+                                <h3>
+                                    C-19 Management<br></br> System
+                                </h3>
+                                <ul>
+                                    <li>python - MySQl linking</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="project-link">
+                            <a
+                                href="https://github.com/imkkapoor/Covid-Management-System"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <button>Github</button>
                             </a>

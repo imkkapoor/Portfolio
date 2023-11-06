@@ -126,13 +126,19 @@ body {
     margin-left: 0.7vw;
 }
 
-.project-collection:nth-child(1)
+.project-collection:nth-child(2)
     > .description-row
     > .project-image-snippet
     > .project-image-desc-text {
     color: black;
 }
 
+.project-collection:nth-child(5)
+    > .description-row
+    > .project-image-snippet
+    > .project-image-desc-text {
+    top: 74.1vh;
+}
 
 .project-image-desc-text > h3 {
     margin: 0;
@@ -155,11 +161,11 @@ body {
     padding: 4px;
 }
 
-.project-image-desc-text > ul > li:nth-child(1){
+.project-image-desc-text > ul > li:nth-child(1) {
     margin-left: 0;
 }
 
-.project-collection:nth-child(1)
+.project-collection:nth-child(2)
     > .description-row
     > .project-image-snippet
     > .project-image-desc-text
