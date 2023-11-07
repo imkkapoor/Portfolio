@@ -51,7 +51,7 @@ export default function ProjectsCardList() {
                     className="project-collection"
                     style={{
                         color: inViewSourcery ? "white" : "black",
-                        background: inViewSourcery ? "black" : "white",
+                        backgroundColor: inViewSourcery ? "black" : "white",
                     }}
                 >
                     <div className="description-row" ref={sourceryRef}>
@@ -87,6 +87,8 @@ export default function ProjectsCardList() {
                                 <ul>
                                     <li>UI/UX</li>
                                     <li>E-COMM</li>
+                                    <li>Mern Stack</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -112,7 +114,7 @@ export default function ProjectsCardList() {
                     className="project-collection"
                     style={{
                         color: inViewconcordance ? "white" : "black",
-                        background: inViewconcordance ? "black" : "white",
+                        backgroundColor: inViewconcordance ? "black" : "white",
                     }}
                 >
                     <div className="description-row" ref={concordanceRef}>
@@ -168,7 +170,7 @@ export default function ProjectsCardList() {
                     className="project-collection"
                     style={{
                         color: inViewStockchex ? "white" : "black",
-                        background: inViewStockchex ? "black" : "white",
+                        backgroundColor: inViewStockchex ? "black" : "white",
                     }}
                 >
                     <div className="description-row" ref={stockchexRef}>
@@ -197,7 +199,7 @@ export default function ProjectsCardList() {
                             >
                                 <h3>StockChex</h3>
                                 <ul>
-                                    <li>ChartJS</li>
+                                    <li>Chart-JS</li>
                                     <li>Rest API</li>
                                 </ul>
                             </div>
@@ -224,7 +226,7 @@ export default function ProjectsCardList() {
                     className="project-collection"
                     style={{
                         color: inViewChromeme ? "white" : "black",
-                        background: inViewChromeme ? "black" : "white",
+                        backgroundColor: inViewChromeme ? "black" : "white",
                     }}
                 >
                     <div className="description-row" ref={chromemeRef}>
@@ -272,7 +274,7 @@ export default function ProjectsCardList() {
                     className="project-collection"
                     style={{
                         color: inViewCms ? "white" : "black",
-                        background: inViewCms ? "black" : "white",
+                        backgroundColor: inViewCms ? "black" : "white",
                     }}
                 >
                     <div className="description-row" ref={cmsRef}>
@@ -325,7 +327,7 @@ export default function ProjectsCardList() {
                     className="project-collection"
                     style={{
                         color: inView5 ? "white" : "black",
-                        background: inView5 ? "black" : "white",
+                        backgroundColor: inView5 ? "black" : "white",
                     }}
                 >
                     <div className="description-row" ref={ref5}>
