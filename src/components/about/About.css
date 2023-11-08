@@ -85,3 +85,16 @@
 .job-description > .current-job > .company-logo > img {
     height: 30px;
 }
+
+
+
+@media screen and (max-width: 1030px) {
+    .intro-wrapper{
+        flex-direction: column;
+    }
+
+    .intro-wrapper> .right-desc{
+        margin-top: 15px;
+    }
+    
+}
