@@ -130,5 +130,6 @@
   }
   .navbar-container-top > .navbar-wrapper > .left {
     text-align: center;
+    padding: 0;
   }
 }
