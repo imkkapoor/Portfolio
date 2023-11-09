@@ -16,6 +16,19 @@ export default function NavBar() {
     // Attach the scroll event listener
     window.addEventListener('scroll', handleScroll);
   });
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -35,7 +48,12 @@ export default function NavBar() {
         style={{ opacity: showComponent ? 1 : 0 }}
       >
         <div className="navbar-wrapper">
-          <div className="left">VK</div>
+          <div
+            className="left"
+            style={{ display: screenWidth > 1000 ? 'block' : 'none' }}
+          >
+            VK
+          </div>
           <div className="right">
             <p>About</p>
             <p>Projects</p>
