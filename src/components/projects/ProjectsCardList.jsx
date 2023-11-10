@@ -14,9 +14,12 @@ import { useInView } from 'react-intersection-observer';
 
 export default function ProjectsCardList() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
+      setScreenHeight(window.innerHeight);
     };
 
     window.addEventListener('resize', handleResize);
@@ -89,24 +92,34 @@ export default function ProjectsCardList() {
                 alt="pj1"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewSourcery
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewSourcery ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewSourcery
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               />
               <div
                 className="project-image-desc-text"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewSourcery
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewSourcery ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewSourcery
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               >
                 <h3>SOURCERY</h3>
@@ -160,24 +173,34 @@ export default function ProjectsCardList() {
                 alt="pj1"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewconcordance
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewconcordance ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewconcordance
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               />
               <div
                 className="project-image-desc-text"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewconcordance
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewconcordance ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewconcordance
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               >
                 <h3>Concordance</h3>
@@ -221,12 +244,17 @@ export default function ProjectsCardList() {
                 alt="pj1"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewStockchex
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewStockchex ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewStockchex
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               />
 
@@ -234,12 +262,17 @@ export default function ProjectsCardList() {
                 className="project-image-desc-text"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewStockchex
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewStockchex ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewStockchex
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               >
                 <h3>StockChex</h3>
@@ -289,24 +322,34 @@ export default function ProjectsCardList() {
                 alt="pj1"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewChromeme
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewChromeme ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewChromeme
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               />
               <div
                 className="project-image-desc-text"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewChromeme
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewChromeme ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewChromeme
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               >
                 <h3>Chromeme</h3>
@@ -352,24 +395,34 @@ export default function ProjectsCardList() {
                 alt="pj1"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewCms
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewCms ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewCms
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               />
               <div
                 className="project-image-desc-text"
                 style={{
                   display:
-                    screenWidth > 850
+                    (screenHeight > 430 && screenWidth > 800)
                       ? inViewCms
                         ? 'block'
                         : 'none'
                       : 'block',
-                  opacity: screenWidth > 850 ? (inViewCms ? 1 : 0) : 1,
+                  opacity:
+                    (screenHeight > 430 && screenWidth > 800)
+                      ? inViewCms
+                        ? 1
+                        : 0
+                      : 1,
                 }}
               >
                 <h3>
