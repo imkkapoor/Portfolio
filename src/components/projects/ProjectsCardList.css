@@ -28,6 +28,7 @@
 body {
   /* change back to white to see border curves for about  */
   background-color: black;
+  /* background-color: #00000000; */
 }
 .project-container {
   color: black;

@@ -1,125 +1,124 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: "Grstk-Mega";
-    src: url("../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf")
-        format("truetype-variations");
-    font-weight: 700; /* default weight */
-    font-style: normal; /* default style */
-    font-stretch: 200%;
-    font-variation-settings: "wdth" 1000, "wght" 700, "slnt" 0;
+  font-family: 'Grstk-Mega';
+  src: url('../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf')
+    format('truetype-variations');
+  font-weight: 700; /* default weight */
+  font-style: normal; /* default style */
+  font-stretch: 200%;
+  font-variation-settings: 'wdth' 1000, 'wght' 700, 'slnt' 0;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: black;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  background-color: black;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-.picker > .slot-item > a{
-    color: inherit;
-    text-decoration: none;
+.picker > .slot-item > a {
+  color: inherit;
+  text-decoration: none;
 }
 .picker > .slot-item {
-    font-size: 100px;
-    /* padding: 200px; */
-    display: block;
-    backface-visibility: hidden;
-    position: absolute;
-    width: 100%;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    text-align: center;
+  font-size: 100px;
+  /* padding: 200px; */
+  display: block;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  text-align: center;
 }
 
 .picker > .slot-item:nth-child(1) {
-    transform: rotateX(0deg) translate3d(0px, 0px, 280px);
-    cursor: pointer;
+  transform: rotateX(0deg) translate3d(0px, 0px, 280px);
+  cursor: pointer;
 }
 .picker > .slot-item:nth-child(2) {
-    transform: rotateX(-22.5deg) translate3d(0px, 0px, 280px);
-    color: black;
+  transform: rotateX(-22.5deg) translate3d(0px, 0px, 280px);
+  color: black;
 }
 .picker > .slot-item:nth-child(3) {
-    transform: rotateX(-45deg) translate3d(0px, 0px, 280px);
-    color: black;
+  transform: rotateX(-45deg) translate3d(0px, 0px, 280px);
+  color: black;
 }
 .picker > .slot-item:nth-child(4) {
-    transform: rotateX(-67.5deg) translate3d(0px, 0px, 280px);
-    color: black;
+  transform: rotateX(-67.5deg) translate3d(0px, 0px, 280px);
+  color: black;
 }
 .picker > .slot-item:nth-child(5) {
-    transform: rotateX(-90deg) translate3d(0px, 0px, 280px);
-    color: black;
+  transform: rotateX(-90deg) translate3d(0px, 0px, 280px);
+  color: black;
 }
 .picker > .slot-item:nth-child(6) {
-    transform: rotateX(-112.5deg) translate3d(0px, 0px, 280px);
-    color: black;
+  transform: rotateX(-112.5deg) translate3d(0px, 0px, 280px);
+  color: black;
 }
 .picker > .slot-item:nth-child(7) {
-    transform: rotateX(-135deg) translate3d(0px, 0px, 280px);
+  transform: rotateX(-135deg) translate3d(0px, 0px, 280px);
 }
 .picker > .slot-item:nth-child(8) {
-    transform: rotateX(-157.5deg) translate3d(0px, 0px, 280px);
+  transform: rotateX(-157.5deg) translate3d(0px, 0px, 280px);
 }
 .picker > .slot-item:nth-child(9) {
-    transform: rotateX(-180deg) translate3d(0px, 0px, 280px);
+  transform: rotateX(-180deg) translate3d(0px, 0px, 280px);
 }
 .picker > .slot-item:nth-child(10) {
-    transform: rotateX(-202.5deg) translate3d(0px, 0px, 280px);
+  transform: rotateX(-202.5deg) translate3d(0px, 0px, 280px);
 }
 
 .picker {
-    height: 100%;
-    width: 100%;
-    padding: 200px 0px;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    flex-direction: column;
-    transform-origin: center;
-    transition: all ease 0.8s;
+  height: 100%;
+  width: 100%;
+  padding: 200px 0px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  flex-direction: column;
+  transform-origin: center;
+  transition: all ease 0.8s;
 }
 
 .picker .slot-item {
-    z-index: 999;
-    font-family: Grstk-Mega;
-    position: absolute;
-    color: white;
-    display: block;
-    width: 100%;
-    text-align: center;
-    /* padding: 200px 0; */
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-        1px 1px 0 #fff;
-    transition: color ease 0.5s;
+  z-index: 999;
+  font-family: Grstk-Mega;
+  position: absolute;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  /* padding: 200px 0; */
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  transition: color ease 0.5s;
 }
 
 .wrapper {
-    /* height: 70%; */
-    height: 70vh;
-    display: inline-block;
-    perspective-origin: center;
-    perspective: 2425px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    /* background-color: black; */
-
+  /* height: 70%; */
+  height: 70vh;
+  display: inline-block;
+  perspective-origin: center;
+  perspective: 2425px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* background-color: black; */
 }
 
 .wrapper::before {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 /* .wrapper::after {
     content: "";
@@ -129,19 +128,44 @@ body {
     height: 100%;
 } */
 .contact {
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .scroll-parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
 }
+
+@media screen and (max-width: 1200px) {
+  .picker > .slot-item {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .picker > .slot-item {
+      font-size: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .picker > .slot-item {
+      font-size: 37px;
+    }
+  }
+  
+  @media screen and (max-width: 430px) {
+    .picker > .slot-item {
+      font-size: 32px;
+    }
+  }
+  

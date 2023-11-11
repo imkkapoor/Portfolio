@@ -1,13 +1,14 @@
 .navbar-container-top {
-  color: black;
+  color: white;
   font-family: 'Grstk-Mega-txt';
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   left: 2.5vw;
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 10px;
+  z-index: -1;
 }
 .navbar-container-top > .navbar-wrapper {
   width: 95vw;
@@ -15,7 +16,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(0.25rem);
+
   border-radius: 7px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -26,7 +29,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 30%;
+  width: 25%;
   font-family: trip-sans-reg;
   transition: width ease 1s;
 }

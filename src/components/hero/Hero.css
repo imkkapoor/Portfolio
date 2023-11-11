@@ -1,4 +1,30 @@
-.hero-container{
-    height: 100vh;
-    background-color: rgb(179, 179, 179);
+.hero-container {
+  height: 101vh;
+  background-color: #00000000;
+  background-image: url('../../assets/backg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: -2;
+  top: 0;
+}
+
+.hero-wrapper {
+  margin: 0 5vw 0 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-wrapper > .hero-caption {
+  font-family: trip-sans;
+  font-size: 23px;
+  color: #a1a1a1;
+  text-align: center;
+}
+.hero-wrapper > .hero-caption > span {
+  color: rgb(255, 255, 255);
 }
