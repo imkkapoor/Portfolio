@@ -145,6 +145,23 @@ body {
   background: black;
 }
 
+.gradient-overlay {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3983718487394958) 10%,
+    rgba(0, 0, 0, 0.22190126050420167) 17%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0) 80%,
+    rgba(0, 0, 0, 0.2191001400560224) 83%,
+    rgba(0, 0, 0, 0.4) 90%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
 @media screen and (max-width: 1200px) {
   .picker > .slot-item {
     font-size: 70px;
@@ -152,20 +169,19 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .picker > .slot-item {
-      font-size: 50px;
-    }
+  .picker > .slot-item {
+    font-size: 50px;
   }
-  
-  @media screen and (max-width: 550px) {
-    .picker > .slot-item {
-      font-size: 37px;
-    }
+}
+
+@media screen and (max-width: 550px) {
+  .picker > .slot-item {
+    font-size: 37px;
   }
-  
-  @media screen and (max-width: 430px) {
-    .picker > .slot-item {
-      font-size: 32px;
-    }
+}
+
+@media screen and (max-width: 430px) {
+  .picker > .slot-item {
+    font-size: 32px;
   }
-  
+}
