@@ -7,14 +7,14 @@ import Hero from "./components/hero/Hero";
 
 function App() {
     return (
-        <div>
+        <>
             <NavBar />
             <Hero />
             <About />
             {/* <Music /> */}
             <ProjectsCardList />
             <SlotMachineScroll />
-        </div>
+        </>
     );
 }
 

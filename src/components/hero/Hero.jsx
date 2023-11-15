@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import memeoji from '../../assets/memeoji.png';
 
 export default function Hero() {
   return (
@@ -9,6 +10,7 @@ export default function Hero() {
           Brewing <span>code potions</span> that would even impress Snape
         </div>
       </div>
+      <img src={memeoji} alt="face" />
     </div>
   );
 }

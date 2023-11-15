@@ -1,7 +1,7 @@
 .navbar-container-top {
   color: white;
   font-family: 'Grstk-Mega-txt';
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -18,7 +18,8 @@
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.082);
   backdrop-filter: blur(0.25rem);
-
+  /* border: 1px solid;
+  border-color: white; */
   border-radius: 7px;
   margin-top: 5px;
   margin-bottom: 5px;
