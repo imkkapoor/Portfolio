@@ -20,15 +20,9 @@
 }
 
 .hero-wrapper > .hero-caption {
-<<<<<<< HEAD
   font-family: Trip-sans;
   font-size: 28px;
   color: #a1a1a1;
-=======
-  font-family: trip-sans;
-  font-size: 23px;
-  color: #868686;
->>>>>>> 18935db03cf24b2c388f8d673304ba54cc2afd8f
   text-align: center;
 }
 .hero-wrapper > .hero-caption > span {
