@@ -1,7 +1,7 @@
 .hero-container {
-  height: 101vh;
+  height: 100vh;
   background-color: #00000000;  
-  background-image: url('../../assets/back.jpg');
+  background-image: url('../../assets/ground_charcoal_texture.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -21,8 +21,8 @@
 
 .hero-wrapper > .hero-caption {
   font-family: Trip-sans;
-  font-size: 28px;
-  color: #a1a1a1;
+  font-size: 22px;
+  color: #b1b1b1;
   text-align: center;
 }
 .hero-wrapper > .hero-caption > span {
