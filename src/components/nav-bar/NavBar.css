@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'Grstk-Mega-Brand';
+  src: url('../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf')
+    format('truetype-variations');
+  font-weight: 800; /* default weight */
+  font-style: normal; /* default style */
+  font-stretch: 120%;
+  /* font-variation-settings: 'wdth' 1000, 'wght' 1000, 'slnt' 0; */
+}
 .navbar-container-top {
   color: white;
-  font-family: 'Grstk-Mega-txt';
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -9,18 +17,17 @@
   font-size: 10px;
   margin-top: 10px;
   z-index: -1;
-  display: none;
+  /* display: none; */
 }
 .navbar-container-top > .navbar-wrapper {
   width: 95vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 8px;
   background-color: rgba(255, 255, 255, 0.082);
   backdrop-filter: blur(0.25rem);
-  /* border: 1px solid;
-  border-color: white; */
+
   border-radius: 7px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -31,7 +38,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 25%;
+  width: 23%;
   font-family: trip-sans-reg;
   transition: width ease 1s;
 }
@@ -47,7 +54,7 @@
 }
 
 .navbar-wrapper .left {
-  font-family: ogg;
+  font-family: Grstk-Mega-Brand;
   padding-left: 10px;
   flex: 1;
 }
@@ -75,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 8px;
   background-color: rgba(49, 49, 49, 0.8);
   backdrop-filter: blur(0.75rem);
   border-radius: 7px;
