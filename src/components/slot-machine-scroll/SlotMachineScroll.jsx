@@ -156,7 +156,6 @@ export default function SlotMachineScroll() {
                 </a>
               </div>
             </div>
-            <div className="picker gradient-overlay" />
           </div>
         </div>
       </div>
