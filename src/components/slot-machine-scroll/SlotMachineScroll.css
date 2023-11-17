@@ -91,7 +91,6 @@ body {
 }
 
 .picker .slot-item {
-  z-index: 999;
   font-family: Grstk-Mega;
   position: absolute;
   color: white;
@@ -105,7 +104,6 @@ body {
 }
 
 .wrapper {
-  /* height: 70%; */
   height: 70vh;
   display: inline-block;
   perspective-origin: center;
@@ -113,20 +111,8 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  /* background-color: black; */
 }
 
-.wrapper::before {
-  position: absolute;
-  top: 0;
-}
-/* .wrapper::after {
-    content: "";
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-} */
 .contact {
   width: 100%;
   height: 100vh;
@@ -145,10 +131,13 @@ body {
   background: black;
 }
 
-.gradient-overlay {
+.wrapper::before,
+.wrapper::after {
+  content: '';
+  z-index: 4;
   position: fixed;
-  height: 100%;
-  top: 0;
+  height: 30%;
+  width: 100%;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -162,26 +151,26 @@ body {
     rgba(0, 0, 0, 1) 100%
   );
 }
-@media screen and (max-width: 1200px) {
-  .picker > .slot-item {
-    font-size: 70px;
-  }
+
+.wrapper::after {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3983718487394958) 20%,
+    rgba(0, 0, 0, 0.22190126050420167) 30%,
+    rgba(0, 0, 0, 0) 30%
+  );
+  bottom: 0;
 }
 
-@media screen and (max-width: 800px) {
-  .picker > .slot-item {
-    font-size: 50px;
-  }
+.wrapper::before {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.2191001400560224) 70%,
+    rgba(0, 0, 0, 0.4) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  top: 0;
 }
 
-@media screen and (max-width: 550px) {
-  .picker > .slot-item {
-    font-size: 37px;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .picker > .slot-item {
-    font-size: 32px;
-  }
-}
