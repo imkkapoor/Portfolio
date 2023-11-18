@@ -4,7 +4,7 @@ import vertiGISLogo from "../../assets/Logos/vertigis-logo.png";
 
 export default function About() {
     return (
-        <div className="intro-container">
+        <div className="intro-container" id="about">
             <div className="intro-wrapper">
                 <div className="left-about">
                     <div className="about-title">About</div>

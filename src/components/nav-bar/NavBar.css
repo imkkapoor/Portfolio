@@ -16,7 +16,8 @@
   left: 2.5vw;
   font-size: 10px;
   margin-top: 10px;
-  z-index: -1;
+  z-index: 0;
+  transition: all ease 0.3s;
   /* display: none; */
 }
 .navbar-container-top > .navbar-wrapper {
@@ -43,14 +44,16 @@
   transition: width ease 1s;
 }
 
-.navbar-container-top > .navbar-wrapper > .right > p {
+.navbar-container-top > .navbar-wrapper > .right > a {
   flex: 1;
   text-align: center;
 }
-.navbar-container-top > .navbar-wrapper > .right > p,
-.navbar-container-bottom > .navbar-wrapper > .right > p {
+.navbar-container-top > .navbar-wrapper > .right > a,
+.navbar-container-bottom > .navbar-wrapper > .right > a {
   margin: 0;
   text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-wrapper .left {

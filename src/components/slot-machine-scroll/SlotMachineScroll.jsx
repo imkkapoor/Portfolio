@@ -96,7 +96,7 @@ export default function SlotMachineScroll() {
 
   return (
     <>
-      <div className="scroll-parent-container">
+      <div className="scroll-parent-container"  id="contact" > 
         <div
           className="contact"
           style={{ transform: `translateY(${scrollAmount}px)` }}

@@ -57,7 +57,7 @@ export default function ProjectsCardList() {
   // });
 
   return (
-    <div className="project-container">
+    <div className="project-container"  id="projects" >
       <div className="project-wrapper">
         <div className="project-section-title-container">
           <div className="project-section-title-wrapper">
