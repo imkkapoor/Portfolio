@@ -56,10 +56,12 @@
   color: white;
 }
 
-.navbar-wrapper .left {
+.navbar-wrapper>.left>a {
   font-family: Grstk-Mega-Brand;
   padding-left: 10px;
   flex: 1;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-container-bottom {
