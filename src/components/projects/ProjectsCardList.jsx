@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './ProjectsCardList.css';
-import sourcerySample from '../../assets/sourcery-aap.jpg';
-import concordanceSample from '../../assets/concordanceSample.jpg';
-import cmsSample from '../../assets/cms-aap.jpg';
-import stockchexSample from '../../assets/stockChecx-aap.jpg';
-import chromemeSample from '../../assets/chromeme-aap.jpg';
+import sourcerySample from '../../assets/project-covers/sourcerySample.png';
+import concordanceSample from '../../assets/project-covers/concordanceSample.png';
+import cmsSample from '../../assets/project-covers/cmsSample.png';
+import stockchexSample from '../../assets/project-covers/stockChecxSample.png';
+import chromemeSample from '../../assets/project-covers/chromemeSample.png';
 
 import { DiReact, DiNodejs, DiPython, DiMysql } from 'react-icons/di';
 import { BiLogoMongodb } from 'react-icons/bi';
