@@ -20,7 +20,7 @@ export default function NavBar() {
   });
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  
+
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
@@ -36,9 +36,14 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="navbar-container-top"   style={{ opacity: showComponent ? 0 : 1 }}>
+      <div
+        className="navbar-container-top"
+        style={{ opacity: showComponent ? 0 : 1 }}
+      >
         <div className="navbar-wrapper">
-          <div className="left">VK</div>
+          <div className="left">
+            <Link to="#hero">VK</Link>
+          </div>
           <div className="right">
             <Link to="#about">About</Link>
             <Link to="#projects">Projects</Link>
@@ -56,7 +61,7 @@ export default function NavBar() {
             className="left"
             style={{ display: screenWidth > 1000 ? 'block' : 'none' }}
           >
-            VK
+            <Link to="#hero">VK</Link>
           </div>
           <div className="right">
             <Link to="#about">About</Link>
