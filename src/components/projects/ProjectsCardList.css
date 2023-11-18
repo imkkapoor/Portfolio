@@ -210,6 +210,50 @@ body {
   > h3 {
   color: white;
 }
+
+.project-collection:nth-child(1)
+  > .description-row
+  > .project-image-snippet
+  > img {
+  background-image: url(../../assets/backgrounds/frantisek-g-XXuVXLy5gHU-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-collection:nth-child(2)
+  > .description-row
+  > .project-image-snippet
+  > img {
+  background-image: url(../../assets/backgrounds/scott-webb-UjupleczBOY-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-collection:nth-child(3)
+  > .description-row
+  > .project-image-snippet
+  > img {
+  background-image: url(../../assets/backgrounds/rohit-ranwa-twEy5TouJLg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-collection:nth-child(4)
+  > .description-row
+  > .project-image-snippet
+  > img {
+  background-image: url(../../assets/backgrounds/steve-johnson-YS0YJLU_h2k-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-collection:nth-child(5)
+  > .description-row
+  > .project-image-snippet
+  > img {
+  background-image: url(../../assets/backgrounds/resul-mentes-DbwYNr8RPbg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .project-image-desc-text > h3 {
   margin: 0;
   transition: none;
