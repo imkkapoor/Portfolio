@@ -61,27 +61,11 @@ body {
   transform: rotateX(-90deg) translate3d(0px, 0px, 280px);
   color: black;
 }
-.picker > .slot-item:nth-child(6) {
-  transform: rotateX(-112.5deg) translate3d(0px, 0px, 280px);
-  color: black;
-}
-.picker > .slot-item:nth-child(7) {
-  transform: rotateX(-135deg) translate3d(0px, 0px, 280px);
-}
-.picker > .slot-item:nth-child(8) {
-  transform: rotateX(-157.5deg) translate3d(0px, 0px, 280px);
-}
-.picker > .slot-item:nth-child(9) {
-  transform: rotateX(-180deg) translate3d(0px, 0px, 280px);
-}
-.picker > .slot-item:nth-child(10) {
-  transform: rotateX(-202.5deg) translate3d(0px, 0px, 280px);
-}
 
 .picker {
   height: 100%;
   width: 100%;
-  padding: 200px 0px;
+  padding: 230px 0px;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -104,7 +88,7 @@ body {
 }
 
 .wrapper {
-  height: 70vh;
+  height: 600px;
   display: inline-block;
   perspective-origin: center;
   perspective: 2425px;
@@ -174,3 +158,112 @@ body {
   top: 0;
 }
 
+@media screen and (max-width: 1400px) {
+  .picker > .slot-item {
+    font-size: 100px;
+  }
+  .wrapper {
+    height: 550px;
+  }
+  .picker {
+    padding: 120px 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .picker > .slot-item {
+    font-size: 70px;
+  }
+  .wrapper {
+    height: 440px;
+  }
+  .picker {
+    padding: 180px 0px;
+  }
+  .picker > .slot-item:nth-child(1) {
+    transform: rotateX(0deg) translate3d(0px, 0px, 220px);
+    cursor: pointer;
+  }
+  .picker > .slot-item:nth-child(2) {
+    transform: rotateX(-22.5deg) translate3d(0px, 0px, 220px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(3) {
+    transform: rotateX(-45deg) translate3d(0px, 0px, 220px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(4) {
+    transform: rotateX(-67.5deg) translate3d(0px, 0px, 220px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(5) {
+    transform: rotateX(-90deg) translate3d(0px, 0px, 220px);
+    color: black;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .picker > .slot-item {
+    font-size: 50px;
+    transform: translate3d(0, 0, 130px);
+  }
+  .wrapper {
+    height: 280px;
+  }
+  .picker {
+    padding: 120px 0px;
+  }
+  .picker > .slot-item:nth-child(1) {
+    transform: rotateX(0deg) translate3d(0px, 0px, 180px);
+    cursor: pointer;
+  }
+  .picker > .slot-item:nth-child(2) {
+    transform: rotateX(-22.5deg) translate3d(0px, 0px, 180px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(3) {
+    transform: rotateX(-45deg) translate3d(0px, 0px, 180px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(4) {
+    transform: rotateX(-67.5deg) translate3d(0px, 0px, 180px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(5) {
+    transform: rotateX(-90deg) translate3d(0px, 0px, 180px);
+    color: black;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .picker > .slot-item {
+    font-size: 35px;
+    transform: translate3d(0, 0, 130px);
+  }
+  .wrapper {
+    height: 280px;
+  }
+  .picker {
+    padding: 120px 0px;
+  }
+  .picker > .slot-item:nth-child(1) {
+    transform: rotateX(0deg) translate3d(0px, 0px, 130px);
+    cursor: pointer;
+  }
+  .picker > .slot-item:nth-child(2) {
+    transform: rotateX(-22.5deg) translate3d(0px, 0px, 130px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(3) {
+    transform: rotateX(-45deg) translate3d(0px, 0px, 130px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(4) {
+    transform: rotateX(-67.5deg) translate3d(0px, 0px, 130px);
+    color: black;
+  }
+  .picker > .slot-item:nth-child(5) {
+    transform: rotateX(-90deg) translate3d(0px, 0px, 130px);
+    color: black;
+  }
+}
