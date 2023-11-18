@@ -3,7 +3,6 @@ import SlotMachineScroll from "./components/slot-machine-scroll/SlotMachineScrol
 import NavBar from "./components/nav-bar/NavBar";
 import ProjectsCardList from "./components/projects/ProjectsCardList";
 import Hero from "./components/hero/Hero";
-// import Music from "./components/music/Music";
 
 function App() {
     return (
@@ -11,7 +10,6 @@ function App() {
             <NavBar />
             <Hero />
             <About />
-            {/* <Music /> */}
             <ProjectsCardList />
             <SlotMachineScroll />
         </>

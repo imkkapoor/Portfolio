@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import vertiGISLogo from "../../assets/vertigis-logo.png";
+import vertiGISLogo from "../../assets/Logos/vertigis-logo.png";
 
 export default function About() {
     return (

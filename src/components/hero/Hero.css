@@ -1,7 +1,7 @@
 .hero-container {
   height: 100vh;
   background-color: #00000000;  
-  background-image: url('../../assets/ground_charcoal_texture.jpg');
+  background-image: url('../../assets/backgrounds/ground_charcoal_texture.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
