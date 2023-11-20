@@ -38,7 +38,10 @@ export default function NavBar() {
     <>
       <div
         className="navbar-container-top"
-        style={{ opacity: showComponent ? 0 : 1 }}
+        style={{
+          opacity: !showComponent ? 1 : 0,
+          zIndex: !showComponent ? 0 : -10,
+        }}
       >
         <div className="navbar-wrapper">
           <div className="left">
@@ -54,7 +57,10 @@ export default function NavBar() {
 
       <div
         className="navbar-container-bottom"
-        style={{ opacity: showComponent ? 1 : 0 }}
+        style={{
+          opacity: showComponent ? 1 : 0,
+          zIndex: !showComponent ? 0 : -10,
+        }}
       >
         <div className="navbar-wrapper">
           <div
