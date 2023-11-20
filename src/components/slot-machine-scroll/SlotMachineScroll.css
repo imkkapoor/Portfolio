@@ -165,9 +165,6 @@ body {
   .wrapper {
     height: 550px;
   }
-  .picker {
-    padding: 120px 0px;
-  }
 }
 
 @media screen and (max-width: 1000px) {
