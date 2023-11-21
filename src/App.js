@@ -4,9 +4,12 @@ import NavBar from './components/nav-bar/NavBar';
 import ProjectsCardList from './components/projects/ProjectsCardList';
 import Hero from './components/hero/Hero';
 import Loading from './components/loading/Loading';
+import "./fonts.css"
 
 import { BrowserRouter } from 'react-router-dom';
 import { Component } from 'react';
+import PageSwapTransition from './components/framer/PageSwapTransition';
+import { AnimatePresence } from 'framer-motion';
 
 class App extends Component {
   constructor(props) {
@@ -30,7 +33,7 @@ class App extends Component {
     const timeoutPromise = new Promise((resolve) => {
       setTimeout(() => {
         resolve();
-      }, 3000);
+      }, 1000);
     });
 
     const imagePromises = backgroundImages.map((url) => {
@@ -56,17 +59,21 @@ class App extends Component {
     return (
       <>
         <BrowserRouter>
-          {this.state.isLoaded ? (
-            <>
-              <NavBar />
-              <Hero />
-              <About />
-              <ProjectsCardList />
-              <SlotMachineScroll />
-            </>
-          ) : (
-            <Loading />
-          )}
+          <AnimatePresence mode="wait">
+            {this.state.isLoaded ? (
+              <PageSwapTransition key="loaded" >
+                <NavBar />
+                <Hero />
+                <About />
+                <ProjectsCardList />
+                <SlotMachineScroll />
+              </PageSwapTransition>
+            ) : (
+              <PageSwapTransition key="loading">
+                <Loading />
+              </PageSwapTransition>
+            )}
+          </AnimatePresence>
         </BrowserRouter>
       </>
     );
