@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'trip-sans-reg';
-  src: url('../../fonts/trip-sans.otf') format('opentype');
-}
-
 .intro-container {
   padding-top: 10vh;
   padding-bottom: 10vh;

@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'Grstk-Mega-Brand';
-  src: url('../../fonts/TRYGrtsk-[wght,wdth,slnt].ttf')
-    format('truetype-variations');
-  font-weight: 800; /* default weight */
-  font-style: normal; /* default style */
-  font-stretch: 120%;
-  /* font-variation-settings: 'wdth' 1000, 'wght' 1000, 'slnt' 0; */
-}
 .navbar-container-top {
   color: white;
   display: flex;
