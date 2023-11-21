@@ -61,7 +61,7 @@ export default function ProjectsCardList() {
       <div className="project-wrapper">
         <div className="project-section-title-container">
           <div className="project-section-title-wrapper">
-            <h1>Projects</h1>
+            <h1>⤵ Projects</h1>
           </div>
         </div>
         <div className="project-rows">
