@@ -429,3 +429,9 @@ body {
     margin-left: 1.5vw;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .project-section-title-wrapper {
+    padding: 30px;
+  }
+}
