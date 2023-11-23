@@ -8,7 +8,7 @@ import "./fonts.css"
 
 import { BrowserRouter } from 'react-router-dom';
 import { Component } from 'react';
-import PageSwapTransition from './components/framer/PageSwapTransition';
+import PageSwapTransition from './framer/PageSwapTransition';
 import { AnimatePresence } from 'framer-motion';
 
 class App extends Component {
