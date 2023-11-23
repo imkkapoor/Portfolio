@@ -90,3 +90,9 @@
     margin-top: 15px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .intro-wrapper {
+    padding: 30px;
+  }
+}
