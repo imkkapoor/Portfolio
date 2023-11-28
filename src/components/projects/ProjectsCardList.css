@@ -4,11 +4,14 @@ body {
   /* background-color: #00000000; */
 }
 .project-container {
+  position: relative;
   color: black;
   background-color: white;
   font-family: trip-sans;
   padding-top: 5vh;
+  z-index: auto;
 }
+
 
 .project-rows {
   margin-top: 8rem;

@@ -7,7 +7,7 @@
   left: 2.5vw;
   font-size: 10px;
   margin-top: 10px;
-  z-index: 0;
+  z-index: 2;
   transition: all ease 0.3s;
   /* display: none; */
 }

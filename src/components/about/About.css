@@ -1,4 +1,5 @@
 .intro-container {
+  position: relative;
   padding-top: 10vh;
   padding-bottom: 10vh;
   display: flex;
@@ -8,6 +9,7 @@
   border-radius: 40px 40px 0 0;
   border-color: black;
   background-color: black;
+  z-index: auto;
 }
 .intro-wrapper {
   display: flex;

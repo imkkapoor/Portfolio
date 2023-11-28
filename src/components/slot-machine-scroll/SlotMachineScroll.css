@@ -99,11 +99,13 @@ body {
 }
 
 .scroll-parent-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background: black;
+  z-index: auto;
 }
 
 .wrapper::before,
