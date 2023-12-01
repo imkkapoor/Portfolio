@@ -37,14 +37,8 @@ export default function NavBar() {
 
   return (
     <>
-      <NavbarReveal opacityValue={!showComponent}>
-        <div
-          className="navbar-container-top"
-          style={{
-            // opacity: !showComponent ? 1 : 0,
-            zIndex: !showComponent ? 2 : -10,
-          }}
-        >
+      <NavbarReveal opacityValue={!showComponent} zValue={2}>
+        <div className="navbar-container-top">
           <div className="navbar-wrapper">
             <div className="left">
               <Link to="#hero">VK</Link>
@@ -57,14 +51,8 @@ export default function NavBar() {
           </div>
         </div>
       </NavbarReveal>
-      <NavbarReveal opacityValue={showComponent}>
-        <div
-          className="navbar-container-bottom"
-          style={{
-            // opacity: showComponent ? 1 : 0,
-            zIndex: showComponent ? 100001 : -10,
-          }}
-        >
+      <NavbarReveal opacityValue={showComponent} zValue={100001}>
+        <div className="navbar-container-bottom">
           <div className="navbar-wrapper">
             <div
               className="left"

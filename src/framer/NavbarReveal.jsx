@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-export default function NavbarReveal({ children, opacityValue }) {
+export default function NavbarReveal({ children, opacityValue, zValue }) {
   const transition = {
     initial: { opacity: 0 },
-    animate: { opacity: opacityValue ? 1 : 0 },
+    animate: {
+      opacity: opacityValue ? 1 : 0,
+      zIndex: opacityValue ? zValue : -10,
+    },
     exit: { opacity: 0 },
   };
   return (
