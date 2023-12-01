@@ -28,6 +28,8 @@ class App extends Component {
       require('./assets/backgrounds/resul-mentes-DbwYNr8RPbg-unsplash.jpg'),
       require('./assets/backgrounds/ground_charcoal_texture.jpg'),
       require('./assets/logo-covers/vertigis-logo.png'),
+      require('./assets/backgrounds/blob.png'),
+
     ];
 
     const timeoutPromise = new Promise((resolve) => {

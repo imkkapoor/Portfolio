@@ -5,7 +5,7 @@ import concordanceSample from '../../assets/project-covers/concordanceSample.png
 import cmsSample from '../../assets/project-covers/cmsSample.png';
 import stockchexSample from '../../assets/project-covers/stockChecxSample.png';
 import chromemeSample from '../../assets/project-covers/chromemeSample.png';
-import Reveal from '../../framer/Reveal'
+import TitleReveal from '../../framer/TitleReveal';
 
 import { DiReact, DiNodejs, DiPython, DiMysql } from 'react-icons/di';
 import { BiLogoMongodb } from 'react-icons/bi';
@@ -61,11 +61,11 @@ export default function ProjectsCardList() {
     <div className="project-container" id="projects">
       <div className="project-wrapper">
         <div className="project-section-title-container">
-          <Reveal>
+          <TitleReveal>
             <div className="project-section-title-wrapper">
               <h1>⤵ Projects</h1>
             </div>
-          </Reveal>
+          </TitleReveal>
         </div>
         <div className="project-rows">
           <div

@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css';
 import vertiGISLogo from '../../assets/logo-covers/vertigis-logo.png';
-import Reveal from '../../framer/Reveal';
+import TitleReveal from '../../framer/TitleReveal';
+
 
 export default function About() {
   return (
     <div className="intro-container" id="about">
-      <Reveal>
+      <TitleReveal>
         <div className="intro-wrapper">
           <div className="left-about">
             <div className="about-title">About</div>
@@ -34,7 +35,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </Reveal>
+      </TitleReveal>
     </div>
   );
 }

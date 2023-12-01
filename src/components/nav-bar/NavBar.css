@@ -8,7 +8,6 @@
   font-size: 10px;
   margin-top: 10px;
   z-index: 2;
-  transition: all ease 0.3s;
   /* display: none; */
 }
 .navbar-container-top > .navbar-wrapper {
@@ -47,7 +46,7 @@
   color: white;
 }
 
-.navbar-wrapper>.left>a {
+.navbar-wrapper > .left > a {
   font-family: Grstk-Mega-Brand;
   padding-left: 10px;
   flex: 1;
@@ -70,7 +69,6 @@
   z-index: 100001;
   font-family: trip-sans-reg;
   font-weight: bold;
-  transition: all ease 0.3s;
 }
 
 .navbar-container-bottom > .navbar-wrapper {
@@ -135,6 +133,9 @@
 @media screen and (max-width: 500px) {
   .navbar-container-top > .navbar-wrapper > .right {
     display: none;
+  }
+  .navbar-container-top > .navbar-wrapper {
+    justify-content: center;
   }
   .navbar-container-top > .navbar-wrapper > .left {
     text-align: center;

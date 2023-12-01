@@ -1,6 +1,6 @@
 .hero-container {
   height: 100vh;
-  background-color: #00000000;  
+  background-color: #00000000;
   background-image: url('../../assets/backgrounds/ground_charcoal_texture.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,14 +17,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .hero-wrapper > .hero-caption {
   font-family: Trip-sans;
-  font-size: 22px;
+  font-size: 16px;
   color: #b1b1b1;
   text-align: center;
+  margin-top: 290px;
 }
-.hero-wrapper > .hero-caption > span {
+.hero-wrapper > .hero-caption > div > span {
   color: rgb(255, 255, 255);
+}
+
+.hero-title {
+  position: fixed;
+  font-family: michelle;
+  font-size: 100px;
+  color: #a5a5a5;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%;
+}
+.hero-title span {
+  display: block;
+  line-height: 0.8;
+}
+
+.hero-wrapper > img {
+  position: fixed;
+  z-index: -10;
+  height: 270px;
 }
