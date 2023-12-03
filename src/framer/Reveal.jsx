@@ -7,7 +7,7 @@ const transition = {
   animate: { opacity: 1, y: 0 },
 };
 
-export default function TitleReveal({ children }) {
+export default function Reveal({ children }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 

@@ -5,7 +5,7 @@ import concordanceSample from '../../assets/project-covers/concordanceSample.png
 import cmsSample from '../../assets/project-covers/cmsSample.png';
 import stockchexSample from '../../assets/project-covers/stockChecxSample.png';
 import chromemeSample from '../../assets/project-covers/chromemeSample.png';
-import TitleReveal from '../../framer/TitleReveal';
+import Reveal from '../../framer/Reveal';
 
 import { DiReact, DiNodejs, DiPython, DiMysql } from 'react-icons/di';
 import { BiLogoMongodb } from 'react-icons/bi';
@@ -59,429 +59,428 @@ export default function ProjectsCardList() {
 
   return (
     <div className="project-container" id="projects">
-      <div className="project-wrapper">
-        <div className="project-section-title-container">
-          <TitleReveal>
+        <Reveal>
+        <div className="project-wrapper">
+          <div className="project-section-title-container">
             <div className="project-section-title-wrapper">
               <h1>⤵ Projects</h1>
             </div>
-          </TitleReveal>
-        </div>
-        <div className="tech-section">
-          <div className="languages-and-frameworks">
-            <p>Languages and Frameworks</p>
-            <div className="list-container">
-              <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Html/CSS</li>
-                <li>C</li>
-                <li>Pyhton</li>
-              </ul>
-              <ul>
-                <li>Java</li>
-                <li>MySQL</li>
-                <li>NodeJs</li>
-                <li>MongoDB</li>
-                <li>WebDriverIO</li>
-              </ul>
-            </div>
           </div>
-          <div className="technologies">
-            <p>Technologies</p>
-            <div className="list-container">
-              <ul>
-                <li>Git</li>
-                <li>Linux</li>
-                <li>R-Studio</li>
-                <li>Matlab</li>
-              </ul>
+          <div className="tech-section">
+            <div className="languages-and-frameworks">
+              <p>Languages and Frameworks</p>
+              <div className="list-container">
+                <ul>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Html/CSS</li>
+                  <li>C</li>
+                  <li>Pyhton</li>
+                </ul>
+                <ul>
+                  <li>Java</li>
+                  <li>MySQL</li>
+                  <li>NodeJs</li>
+                  <li>MongoDB</li>
+                  <li>WebDriverIO</li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="project-rows">
-          <div
-            className="project-collection"
-            style={{
-              color: inViewSourcery ? 'white' : 'black',
-              backgroundColor: inViewSourcery ? 'black' : 'white',
-            }}
-          >
-            <div className="description-row" ref={sourceryRef}>
-              <div className="tech-used-and-label">
-                <div className="tech-used">
-                  <div className="icon">
-                    <BiLogoMongodb />
-                  </div>
-                  <div className="icon">
-                    <DiReact />
-                  </div>
-                  <div className="icon">
-                    <DiNodejs />
-                  </div>
-                </div>
-                <h3>Sourcery</h3>
-              </div>
-              <div className="project-image-snippet">
-                <img
-                  src={sourcerySample}
-                  alt="pj1"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewSourcery
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewSourcery
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                />
-                <div
-                  className="project-image-desc-text"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewSourcery
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewSourcery
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                >
-                  <h3>SOURCERY</h3>
-                  <ul>
-                    <li>UI/UX</li>
-                    <li>E-COMM</li>
-                    <li>Mern Stack</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="project-link">
-                <a
-                  href="https://sourcery604.netlify.app/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button>Website</button>
-                </a>
-                <a
-                  href="https://github.com/imkkapoor/Sourcery"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>Github</button>
-                </a>
+            <div className="technologies">
+              <p>Technologies</p>
+              <div className="list-container">
+                <ul>
+                  <li>Git</li>
+                  <li>Linux</li>
+                  <li>R-Studio</li>
+                  <li>Matlab</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div
-            className="project-collection"
-            style={{
-              color: inViewconcordance ? 'white' : 'black',
-              backgroundColor: inViewconcordance ? 'black' : 'white',
-            }}
-          >
-            <div className="description-row" ref={concordanceRef}>
-              <div className="tech-used-and-label">
-                <div className="tech-used">
-                  <div className="icon">
-                    <DiPython />
+          <div className="project-rows">
+            <div
+              className="project-collection"
+              style={{
+                color: inViewSourcery ? 'white' : 'black',
+                backgroundColor: inViewSourcery ? 'black' : 'white',
+              }}
+            >
+              <div className="description-row" ref={sourceryRef}>
+                <div className="tech-used-and-label">
+                  <div className="tech-used">
+                    <div className="icon">
+                      <BiLogoMongodb />
+                    </div>
+                    <div className="icon">
+                      <DiReact />
+                    </div>
+                    <div className="icon">
+                      <DiNodejs />
+                    </div>
                   </div>
-                  <div className="icon">
-                    <TbHexagonLetterC />
+                  <h3>Sourcery</h3>
+                </div>
+                <div className="project-image-snippet">
+                  <img
+                    src={sourcerySample}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewSourcery
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewSourcery
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <div
+                    className="project-image-desc-text"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewSourcery
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewSourcery
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  >
+                    <h3>SOURCERY</h3>
+                    <ul>
+                      <li>UI/UX</li>
+                      <li>E-COMM</li>
+                      <li>Mern Stack</li>
+                    </ul>
                   </div>
                 </div>
-                <h3>Concordance</h3>
+                <div className="project-link">
+                  <a
+                    href="https://sourcery604.netlify.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <button>Website</button>
+                  </a>
+                  <a
+                    href="https://github.com/imkkapoor/Sourcery"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Github</button>
+                  </a>
+                </div>
               </div>
-              <div className="project-image-snippet">
-                <img
-                  src={concordanceSample}
-                  alt="pj1"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewconcordance
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewconcordance
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                />
-                <div
-                  className="project-image-desc-text"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewconcordance
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewconcordance
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                >
+            </div>
+            <div
+              className="project-collection"
+              style={{
+                color: inViewconcordance ? 'white' : 'black',
+                backgroundColor: inViewconcordance ? 'black' : 'white',
+              }}
+            >
+              <div className="description-row" ref={concordanceRef}>
+                <div className="tech-used-and-label">
+                  <div className="tech-used">
+                    <div className="icon">
+                      <DiPython />
+                    </div>
+                    <div className="icon">
+                      <TbHexagonLetterC />
+                    </div>
+                  </div>
                   <h3>Concordance</h3>
-                  <ul>
-                    <li>Data Structures</li>
-                    <li>Dynamic Memory</li>
-                  </ul>
                 </div>
-              </div>
-              <div className="project-link">
-                <a
-                  href="https://github.com/imkkapoor/Concordance"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>Github</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="project-collection"
-            style={{
-              color: inViewStockchex ? 'white' : 'black',
-              backgroundColor: inViewStockchex ? 'black' : 'white',
-            }}
-          >
-            <div className="description-row" ref={stockchexRef}>
-              <div className="tech-used-and-label">
-                <div className="tech-used">
-                  <div className="icon">
-                    <IoLogoJavascript />
+                <div className="project-image-snippet">
+                  <img
+                    src={concordanceSample}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewconcordance
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewconcordance
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <div
+                    className="project-image-desc-text"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewconcordance
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewconcordance
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  >
+                    <h3>Concordance</h3>
+                    <ul>
+                      <li>Data Structures</li>
+                      <li>Dynamic Memory</li>
+                    </ul>
                   </div>
                 </div>
-                <h3>StockChex</h3>
+                <div className="project-link">
+                  <a
+                    href="https://github.com/imkkapoor/Concordance"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Github</button>
+                  </a>
+                </div>
               </div>
-              <div className="project-image-snippet">
-                <img
-                  src={stockchexSample}
-                  alt="pj1"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewStockchex
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewStockchex
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                />
+            </div>
 
-                <div
-                  className="project-image-desc-text"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewStockchex
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewStockchex
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                >
+            <div
+              className="project-collection"
+              style={{
+                color: inViewStockchex ? 'white' : 'black',
+                backgroundColor: inViewStockchex ? 'black' : 'white',
+              }}
+            >
+              <div className="description-row" ref={stockchexRef}>
+                <div className="tech-used-and-label">
+                  <div className="tech-used">
+                    <div className="icon">
+                      <IoLogoJavascript />
+                    </div>
+                  </div>
                   <h3>StockChex</h3>
-                  <ul>
-                    <li>Chart-JS</li>
-                    <li>Rest API</li>
-                  </ul>
                 </div>
-              </div>
-              <div className="project-link">
-                <a
-                  href="https://stockchex.netlify.app/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button>Website</button>
-                </a>
-                <a
-                  href="https://github.com/imkkapoor/Stockchex"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button>Github</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            className="project-collection"
-            style={{
-              color: inViewChromeme ? 'white' : 'black',
-              backgroundColor: inViewChromeme ? 'black' : 'white',
-            }}
-          >
-            <div className="description-row" ref={chromemeRef}>
-              <div className="tech-used-and-label">
-                <div className="tech-used">
-                  <div className="icon">
-                    <IoLogoJavascript />
+                <div className="project-image-snippet">
+                  <img
+                    src={stockchexSample}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewStockchex
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewStockchex
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+
+                  <div
+                    className="project-image-desc-text"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewStockchex
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewStockchex
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  >
+                    <h3>StockChex</h3>
+                    <ul>
+                      <li>Chart-JS</li>
+                      <li>Rest API</li>
+                    </ul>
                   </div>
                 </div>
-                <h3>Chromeme</h3>
+                <div className="project-link">
+                  <a
+                    href="https://stockchex.netlify.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <button>Website</button>
+                  </a>
+                  <a
+                    href="https://github.com/imkkapoor/Stockchex"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <button>Github</button>
+                  </a>
+                </div>
               </div>
-              <div className="project-image-snippet">
-                <img
-                  src={chromemeSample}
-                  alt="pj1"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewChromeme
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewChromeme
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                />
-                <div
-                  className="project-image-desc-text"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewChromeme
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewChromeme
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                >
+            </div>
+            <div
+              className="project-collection"
+              style={{
+                color: inViewChromeme ? 'white' : 'black',
+                backgroundColor: inViewChromeme ? 'black' : 'white',
+              }}
+            >
+              <div className="description-row" ref={chromemeRef}>
+                <div className="tech-used-and-label">
+                  <div className="tech-used">
+                    <div className="icon">
+                      <IoLogoJavascript />
+                    </div>
+                  </div>
                   <h3>Chromeme</h3>
-                  <ul>
-                    <li>Chrome Extension</li>
-                  </ul>
                 </div>
-              </div>
-              <div className="project-link">
-                <a
-                  href="https://github.com/imkkapoor/Chromeme"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <button>Github</button>
-                </a>
+                <div className="project-image-snippet">
+                  <img
+                    src={chromemeSample}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewChromeme
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewChromeme
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <div
+                    className="project-image-desc-text"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewChromeme
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewChromeme
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  >
+                    <h3>Chromeme</h3>
+                    <ul>
+                      <li>Chrome Extension</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="project-link">
+                  <a
+                    href="https://github.com/imkkapoor/Chromeme"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <button>Github</button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div
-            className="project-collection"
-            style={{
-              color: inViewCms ? 'white' : 'black',
-              backgroundColor: inViewCms ? 'black' : 'white',
-            }}
-          >
-            <div className="description-row" ref={cmsRef}>
-              <div className="tech-used-and-label">
-                <div className="tech-used">
-                  <div className="icon">
-                    <DiPython />
+            <div
+              className="project-collection"
+              style={{
+                color: inViewCms ? 'white' : 'black',
+                backgroundColor: inViewCms ? 'black' : 'white',
+              }}
+            >
+              <div className="description-row" ref={cmsRef}>
+                <div className="tech-used-and-label">
+                  <div className="tech-used">
+                    <div className="icon">
+                      <DiPython />
+                    </div>
+                    <div className="icon">
+                      <DiMysql />
+                    </div>
                   </div>
-                  <div className="icon">
-                    <DiMysql />
+                  <h3>CMS</h3>
+                </div>
+                <div className="project-image-snippet">
+                  <img
+                    src={cmsSample}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewCms
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewCms
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <div
+                    className="project-image-desc-text"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewCms
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewCms
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  >
+                    <h3>
+                      C-19 Management<br></br> System
+                    </h3>
+                    <ul>
+                      <li>python - MySQl linking</li>
+                    </ul>
                   </div>
                 </div>
-                <h3>CMS</h3>
-              </div>
-              <div className="project-image-snippet">
-                <img
-                  src={cmsSample}
-                  alt="pj1"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewCms
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewCms
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                />
-                <div
-                  className="project-image-desc-text"
-                  style={{
-                    display:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewCms
-                          ? 'block'
-                          : 'none'
-                        : 'block',
-                    opacity:
-                      screenHeight > 430 && screenWidth > 800
-                        ? inViewCms
-                          ? 1
-                          : 0
-                        : 1,
-                  }}
-                >
-                  <h3>
-                    C-19 Management<br></br> System
-                  </h3>
-                  <ul>
-                    <li>python - MySQl linking</li>
-                  </ul>
+                <div className="project-link">
+                  <a
+                    href="https://github.com/imkkapoor/Covid-Management-System"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Github</button>
+                  </a>
                 </div>
-              </div>
-              <div className="project-link">
-                <a
-                  href="https://github.com/imkkapoor/Covid-Management-System"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>Github</button>
-                </a>
               </div>
             </div>
-          </div>
 
-          {/* <div
+            {/* <div
                     className="project-collection"
                     style={{
                         color: inView5 ? "white" : "black",
@@ -525,8 +524,9 @@ export default function ProjectsCardList() {
                         </div>
                     </div>
                 </div> */}
+          </div>
         </div>
+    </Reveal>
       </div>
-    </div>
   );
 }
