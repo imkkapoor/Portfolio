@@ -67,6 +67,38 @@ export default function ProjectsCardList() {
             </div>
           </TitleReveal>
         </div>
+        <div className="tech-section">
+          <div className="languages-and-frameworks">
+            <p>Languages and Frameworks</p>
+            <div className="list-container">
+              <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Html/CSS</li>
+                <li>C</li>
+                <li>Pyhton</li>
+              </ul>
+              <ul>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>NodeJs</li>
+                <li>MongoDB</li>
+                <li>WebDriverIO</li>
+              </ul>
+            </div>
+          </div>
+          <div className="technologies">
+            <p>Technologies</p>
+            <div className="list-container">
+              <ul>
+                <li>Git</li>
+                <li>Linux</li>
+                <li>R-Studio</li>
+                <li>Matlab</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div className="project-rows">
           <div
             className="project-collection"
