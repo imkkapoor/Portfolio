@@ -39,7 +39,7 @@ body {
 }
 
 .tech-section {
-  padding: 10px 20px 50px 20px;
+  padding: 10px 20px 50px 25px;
   display: flex;
 }
 .languages-and-frameworks {
@@ -48,12 +48,13 @@ body {
 
 .technologies p,
 .languages-and-frameworks p {
-  font-size: 15px;
+  font-size: 12.4px;
+  text-transform: uppercase;
 }
 
 .list-container {
   display: flex;
-  font-size: 12px;
+  font-size: 12.4px;
 }
 
 .list-container ul {
@@ -65,6 +66,7 @@ body {
 .list-container ul li {
   padding: 3px;
   font-weight: 600;
+  padding-left: 0;
 }
 
 .project-collection {
