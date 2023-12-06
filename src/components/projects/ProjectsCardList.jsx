@@ -6,6 +6,11 @@ import cmsSample from '../../assets/project-covers/cmsSample.png';
 import stockchexSample from '../../assets/project-covers/stockChecxSample.png';
 import chromemeSample from '../../assets/project-covers/chromemeSample.png';
 import Reveal from '../../framer/Reveal';
+import sourcerySampleBack from '../../assets/backgrounds/frantisek-g-XXuVXLy5gHU-unsplash.jpg';
+import concordanceSampleBack from '../../assets/backgrounds/scott-webb-UjupleczBOY-unsplash.jpg';
+import stockchexSampleBack from '../../assets/backgrounds/rohit-ranwa-twEy5TouJLg-unsplash.jpg';
+import chromemeSampleBack from '../../assets/backgrounds/steve-johnson-YS0YJLU_h2k-unsplash.jpg';
+import cmsSampleBack from '../../assets/backgrounds/resul-mentes-DbwYNr8RPbg-unsplash.jpg';
 
 import { DiReact, DiNodejs, DiPython, DiMysql } from 'react-icons/di';
 import { BiLogoMongodb } from 'react-icons/bi';
@@ -59,7 +64,7 @@ export default function ProjectsCardList() {
 
   return (
     <div className="project-container" id="projects">
-        <Reveal>
+      <Reveal>
         <div className="project-wrapper">
           <div className="project-section-title-container">
             <div className="project-section-title-wrapper">
@@ -122,6 +127,24 @@ export default function ProjectsCardList() {
                   <h3>Sourcery</h3>
                 </div>
                 <div className="project-image-snippet">
+                  <img
+                    src={sourcerySampleBack}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewSourcery
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewSourcery
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
                   <img
                     src={sourcerySample}
                     alt="pj1"
@@ -204,6 +227,24 @@ export default function ProjectsCardList() {
                 </div>
                 <div className="project-image-snippet">
                   <img
+                    src={concordanceSampleBack}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewconcordance
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewconcordance
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <img
                     src={concordanceSample}
                     alt="pj1"
                     style={{
@@ -274,6 +315,24 @@ export default function ProjectsCardList() {
                   <h3>StockChex</h3>
                 </div>
                 <div className="project-image-snippet">
+                  <img
+                    src={stockchexSampleBack}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewStockchex
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewStockchex
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
                   <img
                     src={stockchexSample}
                     alt="pj1"
@@ -353,6 +412,24 @@ export default function ProjectsCardList() {
                 </div>
                 <div className="project-image-snippet">
                   <img
+                    src={chromemeSampleBack}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewChromeme
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewChromeme
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <img
                     src={chromemeSample}
                     alt="pj1"
                     style={{
@@ -425,6 +502,24 @@ export default function ProjectsCardList() {
                   <h3>CMS</h3>
                 </div>
                 <div className="project-image-snippet">
+                  <img
+                    src={cmsSampleBack}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewCms
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewCms
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
                   <img
                     src={cmsSample}
                     alt="pj1"
@@ -526,7 +621,7 @@ export default function ProjectsCardList() {
                 </div> */}
           </div>
         </div>
-    </Reveal>
-      </div>
+      </Reveal>
+    </div>
   );
 }
