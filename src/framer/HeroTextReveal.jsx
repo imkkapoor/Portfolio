@@ -5,12 +5,12 @@ export default function HeroTextReveal({ children, xValue, isLeft }) {
   const [isMarginNeeded, setIsMarginNeeded] = useState(true);
 
   const handleResize = () => {
-    setIsMarginNeeded(window.innerWidth > 550);
+    setIsMarginNeeded(window.innerWidth > 700);
   };
 
   useEffect(() => {
     // Set initial width
-    setIsMarginNeeded(window.innerWidth > 550);
+    setIsMarginNeeded(window.innerWidth > 700);
 
     // Add event listener for window resize
     window.addEventListener('resize', handleResize);
@@ -27,7 +27,7 @@ export default function HeroTextReveal({ children, xValue, isLeft }) {
     animate: {
       opacity: 1,
       x: 0,
-      [marginSide]: isMarginNeeded ? '20vw' : '0',
+      [marginSide]: isMarginNeeded ? '32vw' : '0',
       fontSize: isMarginNeeded ? '100px' : '80px',
     },
   };

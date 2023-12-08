@@ -1,31 +1,37 @@
 import React from 'react';
 import './Hero.css';
-import blob from '../../assets/backgrounds/blob.png';
+import model from '../../assets/backgrounds/7bed989693579db0204b17273f24983d.jpg';
 import HeroTextReveal from '../../framer/HeroTextReveal';
 import OpacityReveal from '../../framer/OpacityReveal';
 
 export default function Hero() {
-
   return (
     <>
       <div id="hero" />
       <div className="hero-container">
         <div className="hero-wrapper">
-          <img src={blob} alt="blob"></img>
+          <img src={model} alt="blob"></img>
           <div className="hero-title">
-            <HeroTextReveal xValue={"-50vw"} isLeft={false}>
-            <span>Digital</span> 
+            <HeroTextReveal xValue={'-50vw'} isLeft={false}>
+              <span>Digital</span>
             </HeroTextReveal>
-              
-            <HeroTextReveal xValue={"50vw"} isLeft={true}>
-            <span>Artisian</span> 
+
+            <HeroTextReveal xValue={'50vw'} isLeft={true}>
+              <span>Artisian</span>
             </HeroTextReveal>
           </div>
           <div className="hero-caption">
-          <OpacityReveal>
-            Brewing <span>code potions</span> that would even impress Snape
-          </OpacityReveal>
-
+            <OpacityReveal>
+              <span>Brewing</span>
+              <br></br> <span>code</span>
+              <span> potions</span>
+              <br></br>
+              <span> that wou</span>
+              <span>ld even</span>
+              <br></br> <span>imp</span>
+              <span>ress </span>
+              <span>Snape</span>
+            </OpacityReveal>
           </div>
         </div>
       </div>
