@@ -119,11 +119,11 @@
 
 @media screen and (max-width: 400px) {
   .hero-wrapper > .hero-caption {
-    width: 380px;
-    height: 172px;
+    width: 370px;
+    height: 170px;
   }
   .hero-wrapper > img {
-    height: 114px;
+    height: 109px;
   }
   .hero-wrapper > .hero-caption > div > span {
     font-size: 38px;
