@@ -3,12 +3,14 @@ import React from 'react';
 
 export default function NavbarReveal({ children, opacityValue, zValue }) {
   const transition = {
-    initial: { opacity: 0 },
+    initial: { opacity: 0, position: 'fixed' },
     animate: {
       opacity: opacityValue ? 1 : 0,
       zIndex: opacityValue ? zValue : -10,
+
+      position: 'fixed',
     },
-    exit: { opacity: 0 },
+    exit: { opacity: 0, position: 'fixed' },
   };
   return (
     <motion.div

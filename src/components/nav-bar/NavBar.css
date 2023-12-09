@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   backdrop-filter: blur(0.25rem);
 
   border-radius: 7px;
@@ -41,17 +41,23 @@
   margin: 0;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
+.navbar-container-bottom > .navbar-wrapper > .right > a {
+  color: white;
+}
 .navbar-wrapper > .left > a {
   font-family: Grstk-Mega-Brand;
   padding-left: 10px;
   flex: 1;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
+.navbar-container-bottom > .navbar-wrapper > .left > a {
+  color: white;
+}
 .navbar-container-bottom {
   color: black;
   font-family: 'Grstk-Mega-txt';
@@ -66,7 +72,7 @@
   color: white;
   font-family: trip-sans-reg;
   font-weight: bold;
-  z-index: inherit;
+  /* z-index: inherit; */
 }
 
 .navbar-container-bottom > .navbar-wrapper {
@@ -88,6 +94,15 @@
   width: 70%;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@media screen and (min-width: 1500px) {
+  .navbar-container-top {
+    font-size: 13.333px;
+  }
+  .navbar-container-bottom {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 1000px) {

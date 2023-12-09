@@ -83,6 +83,30 @@
   height: 30px;
 }
 
+@media screen and (min-width: 1500px) {
+  .left-about > .about-title {
+    font-size: 90px;
+  }
+  .right-desc {
+    font-size: 32px;
+  }
+  .job-description > .job-description-head {
+    font-size: 16px;
+  }
+  .job-description > .current-job > .company-logo {
+    height: 66.65px;
+    width: 66.65px;
+  }
+  .job-description > .current-job > .company-logo > img {
+    height: 40px;
+  }
+  .job-description > .current-job > .description > p {
+    font-size: 18.662px;
+  }
+  .job-description > .current-job > .description > p:nth-child(2) {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 1030px) {
   .intro-wrapper {
     flex-direction: column;

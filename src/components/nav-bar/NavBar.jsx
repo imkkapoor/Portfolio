@@ -11,7 +11,7 @@ export default function NavBar() {
       const scrollHeight = window.scrollY;
 
       // Adjust the threshold as needed
-      const threshold = 0.7 * window.innerHeight;
+      const threshold = 0.85 * window.innerHeight;
 
       setShowComponent(scrollHeight > threshold);
     };

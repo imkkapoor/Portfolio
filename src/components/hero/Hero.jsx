@@ -1,7 +1,6 @@
 import React from 'react';
 import './Hero.css';
 import model from '../../assets/backgrounds/7bed989693579db0204b17273f24983d.jpg';
-import HeroTextReveal from '../../framer/HeroTextReveal';
 import OpacityReveal from '../../framer/OpacityReveal';
 
 export default function Hero() {
@@ -11,15 +10,6 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-wrapper">
           <img src={model} alt="blob"></img>
-          <div className="hero-title">
-            <HeroTextReveal xValue={'-50vw'} isLeft={false}>
-              <span>Digital</span>
-            </HeroTextReveal>
-
-            <HeroTextReveal xValue={'50vw'} isLeft={true}>
-              <span>Artisian</span>
-            </HeroTextReveal>
-          </div>
           <div className="hero-caption">
             <OpacityReveal>
               <span>Brewing</span>

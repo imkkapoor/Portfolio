@@ -337,6 +337,27 @@ body {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .project-section-title-wrapper > h1 {
+    font-size: 90px;
+  }
+  .technologies p,
+  .languages-and-frameworks p,
+  .list-container {
+    font-size: 16.6px;
+  }
+  .description-row > .tech-used-and-label > h3,
+  .project-collection > .description-row > .tech-used-and-label > .tech-used {
+    font-size: 33.325px;
+  }
+  .project-collection > .description-row > .tech-used-and-label > .tech-used {
+    width: 152px;
+  }
+  .project-collection > .description-row > .project-link > a > button {
+    font-size: 15px;
+  }
+}
+
 @media screen and (min-height: 520px) and (max-width: 800px) {
   .project-image-desc-text {
     bottom: 11.7vh;
@@ -397,7 +418,10 @@ body {
     position: relative;
   }
 
-  .project-collection > .description-row > .project-image-snippet > img:nth-child(1) {
+  .project-collection
+    > .description-row
+    > .project-image-snippet
+    > img:nth-child(1) {
     position: static;
     height: 50vh;
   }
