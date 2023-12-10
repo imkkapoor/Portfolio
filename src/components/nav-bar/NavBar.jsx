@@ -11,7 +11,7 @@ export default function NavBar() {
       const scrollHeight = window.scrollY;
 
       // Adjust the threshold as needed
-      const threshold = 0.85 * window.innerHeight;
+      const threshold = 0.7 * window.innerHeight;
 
       setShowComponent(scrollHeight > threshold);
     };
@@ -37,20 +37,19 @@ export default function NavBar() {
 
   return (
     <>
-      <NavbarReveal opacityValue={!showComponent} zValue={2}>
-        <div className="navbar-container-top">
-          <div className="navbar-wrapper">
-            <div className="left">
-              <Link to="#hero">VK</Link>
-            </div>
-            <div className="right">
-              <Link to="#about">About</Link>
-              <Link to="#projects">Projects</Link>
-              <Link to="#contact">Contact</Link>
-            </div>
+      <div className="navbar-container-top">
+        <div className="navbar-wrapper">
+          <div className="left">
+            <Link to="#hero">VK</Link>
+          </div>
+          <div className="right">
+            <Link to="#about">About</Link>
+            <Link to="#projects">Projects</Link>
+            <Link to="#contact">Contact</Link>
           </div>
         </div>
-      </NavbarReveal>
+      </div>
+
       <NavbarReveal opacityValue={showComponent} zValue={100001}>
         <div className="navbar-container-bottom">
           <div className="navbar-wrapper">

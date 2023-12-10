@@ -3,15 +3,16 @@ import React from 'react';
 
 export default function NavbarReveal({ children, opacityValue, zValue }) {
   const transition = {
-    initial: { opacity: 0, position: 'fixed' },
+    initial: { y: '110vh', position: 'fixed' },
     animate: {
-      opacity: opacityValue ? 1 : 0,
-      zIndex: opacityValue ? zValue : -10,
-
+      zIndex: zValue,
       position: 'fixed',
+      y: opacityValue ? '100vh' : '110vh',
+      x: '0vw',
     },
-    exit: { opacity: 0, position: 'fixed' },
+    exit: { y: '110vh', position: 'fixed' },
   };
+
   return (
     <motion.div
       variants={transition}
@@ -19,6 +20,7 @@ export default function NavbarReveal({ children, opacityValue, zValue }) {
       animate="animate"
       exit="exit"
       transition={{ duration: 0.5, ease: 'easeInOut' }}
+      style={{ width: '100%' }}
     >
       {children}
     </motion.div>

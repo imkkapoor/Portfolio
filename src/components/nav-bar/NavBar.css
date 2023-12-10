@@ -48,11 +48,15 @@
   color: white;
 }
 .navbar-wrapper > .left > a {
-  font-family: Grstk-Mega-Brand;
-  padding-left: 10px;
+  font-family: catcheye;
+  font-weight: bold;
+  font-size: 11.5px;
+  padding:  9.9px 9.5px 8px 9.5px;
   flex: 1;
   text-decoration: none;
-  color: black;
+  color: white;
+  border-radius: 6px;
+  background-color: black;
 }
 
 .navbar-container-bottom > .navbar-wrapper > .left > a {
@@ -71,8 +75,6 @@
   width: 100%;
   color: white;
   font-family: trip-sans-reg;
-  font-weight: bold;
-  /* z-index: inherit; */
 }
 
 .navbar-container-bottom > .navbar-wrapper {
@@ -80,13 +82,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px;
+  padding: 14px;
   background-color: rgba(49, 49, 49, 0.8);
   backdrop-filter: blur(0.75rem);
   border-radius: 7px;
   margin-top: 5px;
   margin-bottom: 5px;
   transition: width ease 1s;
+  padding-top: 15.9px;
 }
 
 .navbar-container-bottom > .navbar-wrapper > .right {
