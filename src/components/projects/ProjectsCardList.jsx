@@ -5,17 +5,20 @@ import concordanceSample from '../../assets/project-covers/concordanceSample.png
 import cmsSample from '../../assets/project-covers/cmsSample.png';
 import stockchexSample from '../../assets/project-covers/stockChecxSample.png';
 import chromemeSample from '../../assets/project-covers/chromemeSample.png';
+import portfolioSample from '../../assets/project-covers/portfolioSample.png';
 import Reveal from '../../framer/Reveal';
 import sourcerySampleBack from '../../assets/backgrounds/frantisek-g-XXuVXLy5gHU-unsplash.jpg';
 import concordanceSampleBack from '../../assets/backgrounds/scott-webb-UjupleczBOY-unsplash.jpg';
 import stockchexSampleBack from '../../assets/backgrounds/rohit-ranwa-twEy5TouJLg-unsplash.jpg';
 import chromemeSampleBack from '../../assets/backgrounds/steve-johnson-YS0YJLU_h2k-unsplash.jpg';
 import cmsSampleBack from '../../assets/backgrounds/resul-mentes-DbwYNr8RPbg-unsplash.jpg';
+import portfolioSampleBack from '../../assets/backgrounds/ground_charcoal_texture.jpg';
 
 import { DiReact, DiNodejs, DiPython, DiMysql } from 'react-icons/di';
 import { BiLogoMongodb } from 'react-icons/bi';
 import { TbHexagonLetterC } from 'react-icons/tb';
 import { IoLogoJavascript } from 'react-icons/io';
+import { PiFramerLogo } from 'react-icons/pi';
 import { useInView } from 'react-intersection-observer';
 
 export default function ProjectsCardList() {
@@ -57,10 +60,10 @@ export default function ProjectsCardList() {
     threshold: 0,
     rootMargin: '-50%',
   });
-  // const [ref5, inView5] = useInView({
-  //     threshold: 0,
-  //     rootMargin: "-50%",
-  // });
+  const [portfolioRef, inViewPortfolio] = useInView({
+    threshold: 0,
+    rootMargin: '-50%',
+  });
 
   return (
     <div className="project-container" id="projects">
@@ -289,6 +292,105 @@ export default function ProjectsCardList() {
                 <div className="project-link">
                   <a
                     href="https://github.com/imkkapoor/Concordance"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Github</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="project-collection"
+              style={{
+                color: inViewPortfolio ? 'white' : 'black',
+                backgroundColor: inViewPortfolio ? 'black' : 'white',
+              }}
+            >
+              <div className="description-row" ref={portfolioRef}>
+                <div className="tech-used-and-label">
+                  <div className="tech-used">
+                    <div className="icon">
+                      <DiReact />
+                    </div>
+                    <div className="icon">
+                      <PiFramerLogo />
+                    </div>
+                  </div>
+                  <h3>Portfolio</h3>
+                </div>
+                <div className="project-image-snippet">
+                  <img
+                    src={portfolioSampleBack}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewPortfolio
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewPortfolio
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <img
+                    src={portfolioSample}
+                    alt="pj1"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewPortfolio
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewPortfolio
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  />
+                  <div
+                    className="project-image-desc-text"
+                    style={{
+                      display:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewPortfolio
+                            ? 'block'
+                            : 'none'
+                          : 'block',
+                      opacity:
+                        screenHeight > 430 && screenWidth > 800
+                          ? inViewPortfolio
+                            ? 1
+                            : 0
+                          : 1,
+                    }}
+                  >
+                    <h3>Personal Portfolio</h3>
+                    <ul>
+                      <li>Design</li>
+                      <li>Animations</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="project-link">
+                  <a
+                    href="https://portfoliovinayak.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Website</button>
+                  </a>
+                  <a
+                    href="https://github.com/imkkapoor/Portfolio"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -574,51 +676,6 @@ export default function ProjectsCardList() {
                 </div>
               </div>
             </div>
-
-            {/* <div
-                    className="project-collection"
-                    style={{
-                        color: inView5 ? "white" : "black",
-                        backgroundColor: inView5 ? "black" : "white",
-                    }}
-                >
-                    <div className="description-row" ref={ref5}>
-                    <div className="tech-used-and-label">
-                        <div className="tech-used">
-                            <div className="icon">
-                                <DiReact />
-                            </div>
-                        </div>
-                        <h3>Portfolio website</h3>
-                        </div>
-                        <div className="project-image-snippet">
-                            <img
-                                src={projectSample}
-                                alt="pj1"
-                                style={{
-                                    display: inView5 ? "block" : "none",
-                                    opacity: inView5 ? 1 : 0,
-                                }}
-                            />
-                        </div>
-                        <div className="project-link">
-                            <a
-                                href="https://github.com/imkkapoor/Chromeme"
-                                rel="noreferrer"
-                                target="_blank"
-                            >
-                                <button>Website</button>
-                            </a>
-                            <a
-                                href="https://github.com/imkkapoor/Portfolio"
-                                rel="noreferrer"
-                                target="_blank"
-                            >
-                                <button>Github</button>
-                            </a>
-                        </div>
-                    </div>
-                </div> */}
           </div>
         </div>
       </Reveal>
