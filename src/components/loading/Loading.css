@@ -85,13 +85,3 @@
     opacity: 1;
   }
 }
-
-
-/* .parent-content-container {
-  opacity: 0;
-  transition: opacity ease-in-out 2s;
-}
-
-.parent-content-container .loaded{
-  opacity: 1;
-} */

@@ -1,7 +1,5 @@
 body {
-  /* change back to white to see border curves for about  */
   background-color: black;
-  /* background-color: #00000000; */
 }
 .project-container {
   position: relative;
@@ -10,10 +8,6 @@ body {
   font-family: trip-sans;
   padding-top: 5vh;
   z-index: auto;
-}
-
-.project-rows {
-  /* margin-top: 8rem; */
 }
 
 .project-section-title-container {
@@ -244,9 +238,6 @@ body {
   > .description-row
   > .project-image-snippet
   > img:nth-child(1) {
-  /* background-image: url(../../assets/backgrounds/frantisek-g-XXuVXLy5gHU-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; */
   aspect-ratio: 766/1080;
   object-fit: cover;
 }
@@ -262,7 +253,6 @@ body {
   display: flex;
   padding: 0;
   text-transform: uppercase;
-  /* padding-left: 1vw; */
 }
 .project-image-desc-text > ul > li {
   border-radius: 5px;

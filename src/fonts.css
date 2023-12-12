@@ -8,32 +8,6 @@
 }
 
 @font-face {
-  font-family: 'skiena';
-  src: url('./fonts/Skeina.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'michelle';
-  src: url('./fonts/Michelle.otf') format('opentype');
-}
-@font-face {
-  font-family: 'fantasy';
-  src: url('./fonts/FANTASY\ MAGIST.otf') format('opentype');
-}
-@font-face {
-  font-family: 'minal';
-  src: url('./fonts/Minal.otf') format('opentype');
-}
-@font-face {
-  font-family: 'saunde';
-  src: url('./fonts/Saunde.otf') format('opentype');
-}
-@font-face {
-  font-family: 'flowrise';
-  src: url('./fonts/FLOWRISE.otf') format('opentype');
-}
-
-@font-face {
   font-family: 'Grstk-Mega-Brand';
   src: url('./fonts/TRYGrtsk-[wght,wdth,slnt].ttf')
     format('truetype-variations');

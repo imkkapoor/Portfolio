@@ -47,7 +47,7 @@ class App extends Component {
       });
     });
 
-    // Once all images are loaded, set the state to indicate that the assets are ready and always have 3 second timeout no matter what
+    // Once all images are loaded, set the state to indicate that the assets are ready and always have a second timeout no matter what
     Promise.all([...imagePromises, timeoutPromise])
       .then(() => {
         this.setState({ isLoaded: true });

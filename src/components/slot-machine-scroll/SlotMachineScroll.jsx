@@ -23,22 +23,16 @@ export default function SlotMachineScroll() {
       ) {
         setCurrentRotation(newRotation);
         setScrollAmount(newRotation);
-        // setCurrentRotation(0);
       }
     };
 
-    // window.addEventListener("scroll", handleScroll);
-    // return () => {
-    //     window.removeEventListener("scroll", handleScroll);
-    // };
+
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // console.log(window.scrollY);
           if (!renderSet) {
             let offset = window.scrollY;
-            // console.log("yess");
             setRenderSet(offset);
           }
           window.addEventListener('scroll', handleScroll);

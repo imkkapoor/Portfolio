@@ -18,7 +18,6 @@ import { DiReact, DiNodejs, DiPython, DiMysql } from 'react-icons/di';
 import { BiLogoMongodb } from 'react-icons/bi';
 import { TbHexagonLetterC } from 'react-icons/tb';
 import { IoLogoJavascript } from 'react-icons/io';
-import { PiFramerLogo } from 'react-icons/pi';
 import { useInView } from 'react-intersection-observer';
 
 export default function ProjectsCardList() {
@@ -313,9 +312,6 @@ export default function ProjectsCardList() {
                   <div className="tech-used">
                     <div className="icon">
                       <DiReact />
-                    </div>
-                    <div className="icon">
-                      <PiFramerLogo />
                     </div>
                   </div>
                   <h3>Portfolio</h3>
