@@ -34,6 +34,8 @@ body {
 
 .tech-section {
   padding: 10px 20px 50px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .languages-and-frameworks {
@@ -47,6 +49,8 @@ body {
 }
 
 .list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 12.4px;
 }
@@ -64,6 +68,8 @@ body {
 }
 
 .project-collection {
+  -webkit-transition: background-color ease 0.5s;
+  -o-transition: background-color ease 0.5s;
   transition: background-color ease 0.5s;
   /* transition: color ease 0.5s; */
 }
@@ -71,11 +77,17 @@ body {
   padding: 2rem 1rem;
   border-bottom: 1px solid;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   border-radius: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   border-color: black;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .project-collection:nth-child(6) > .description-row {
@@ -86,6 +98,8 @@ body {
 .description-row > .tech-used-and-label > h3 {
   margin: 0px;
   font-size: 1.5rem;
+  -webkit-box-flex: 0.7;
+  -ms-flex: 0.7;
   flex: 0.7;
   font-weight: 400;
 }
@@ -103,18 +117,29 @@ body {
   cursor: pointer;
 }
 .project-collection > .description-row > .project-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
 .project-collection > .description-row > .project-image-snippet {
   z-index: 99;
   height: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -129,15 +154,23 @@ body {
   /* transition: opacity ease 1s; */
 }
 .project-collection > .description-row > .tech-used-and-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 .project-collection > .description-row > .tech-used-and-label > .tech-used {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 25px;
   margin-right: 20px;
   width: 115px;
   border-right: solid 1.4px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -147,11 +180,18 @@ body {
   > .tech-used
   > .icon {
   padding-right: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .project-image-desc-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
   bottom: 13.15vh;
@@ -239,17 +279,22 @@ body {
   > .project-image-snippet
   > img:nth-child(1) {
   aspect-ratio: 766/1080;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .project-image-desc-text > h3 {
   margin: 0;
+  -webkit-transition: none;
+  -o-transition: none;
   transition: none;
 }
 
 .project-image-desc-text > ul {
   list-style: none;
   margin: 0 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   text-transform: uppercase;
@@ -304,6 +349,9 @@ body {
 
 @media screen and (max-height: 431px) {
   .description-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .project-collection > .description-row > .project-image-snippet {
@@ -325,7 +373,11 @@ body {
     margin-top: 20px;
   }
   .project-collection > .description-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
   .project-image-desc-text > h3 {
@@ -422,6 +474,9 @@ body {
 /* for small devices */
 @media screen and (max-width: 800px) {
   .description-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .project-collection > .description-row > .project-image-snippet {
@@ -454,7 +509,11 @@ body {
     margin-top: 20px;
   }
   .project-collection > .description-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 }
@@ -484,6 +543,9 @@ body {
 
 @media screen and (max-width: 500px) {
   .tech-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
