@@ -21,7 +21,7 @@ export default function About() {
               excellence!
             </div>
             <div className="job-description">
-              <div className="job-description-head">Cooking up code at</div>
+              <div className="job-description-head">Last internship as</div>
               <div className="current-job">
                 <div className="company-logo">
                   <img src={vertiGISLogo} alt="logo"></img>
