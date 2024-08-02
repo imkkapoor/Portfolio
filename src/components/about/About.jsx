@@ -13,7 +13,7 @@ export default function About() {
           </div>
           <div className="right-desc">
             <div className="desc-content">
-              Vinayak <sub>(He/Him)</sub> is a 3<sup>rd</sup> Computer Science
+              Vinayak <sub>(He/Him)</sub> is a 3<sup>rd</sup> year Computer Science
               major<br></br> at the University of Victoria. I'm in pursuit of
               internships, armed with a robust skill set in software
               development. Fueled by motivation and a thirst for learning, I'm
