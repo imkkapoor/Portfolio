@@ -5,6 +5,7 @@ import ProjectsCardList from './components/projects/ProjectsCardList';
 import Hero from './components/hero/Hero';
 import Loading from './components/loading/Loading';
 import "./fonts.css"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import { BrowserRouter } from 'react-router-dom';
 import { Component } from 'react';
@@ -76,6 +77,7 @@ class App extends Component {
               </PageSwapTransition>
             )}
           </AnimatePresence>
+          <SpeedInsights/>
         </BrowserRouter>
       </>
     );
