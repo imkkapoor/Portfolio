@@ -1,156 +1,180 @@
 .intro-container {
-  position: relative;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: solid 1px;
-  border-radius: 40px 40px 0 0;
-  border-color: black;
-  background-color: black;
-  z-index: auto;
+    position: relative;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 40px 40px 0 0;
+    border-color: black;
+    background-color: black;
+    z-index: auto;
 }
 .intro-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  padding: 30px 80px 30px 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    padding: 30px 80px 30px 80px;
 }
 .left-about {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 .left-about > .about-title {
-  font-size: 60px;
-  font-family: trip-sans;
+    font-size: 60px;
+    font-family: trip-sans;
 }
 
 .right-desc {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  font-size: 24px;
-  font-family: trip-sans-reg;
-  font-weight: bold;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    font-size: 24px;
+    font-family: trip-sans-reg;
+    font-weight: bold;
 }
 
 .right-desc > .desc-content > sub,
 .right-desc > .desc-content > sup {
-  font-size: 18px;
-  font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 .right-desc > .desc-content {
-  width: 100%;
+    width: 100%;
 }
 
 .job-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 35px;
 }
 
-.job-description > .job-description-head {
-  font-size: 12px;
+.job-description-head {
+    font-size: 12px;
 
-  text-transform: uppercase;
-}
-.job-description > .current-job {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.job-description > .current-job > .description {
-  padding-left: 14px;
+    text-transform: uppercase;
 }
 
-.job-description > .current-job > .description > p {
-  margin: 0;
-  font-size: 14px;
+.current-job {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.job-description > .current-job > .description > p:nth-child(2) {
-  font-size: 12px;
-  color: #808080;
+.current-job > .description {
+    padding-left: 14px;
 }
-.job-description > .current-job > .company-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.12);
-  height: 50px;
-  width: 50px;
-  border-radius: 10px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+
+.current-job > .description > p {
+    margin: 0;
+    font-size: 14px;
 }
-.job-description > .current-job > .company-logo > img {
-  height: 30px;
+
+.current-job > .description > p:nth-child(2) {
+    font-size: 12px;
+    color: #808080;
+}
+
+.current-job > .company-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.12);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.current-job > .company-logo > img {
+    height: 30px;
+}
+
+.past {
+    margin-left: 60px;
 }
 
 @media screen and (min-width: 1500px) {
-  .left-about > .about-title {
-    font-size: 90px;
-  }
-  .right-desc {
-    font-size: 32px;
-  }
-  .job-description > .job-description-head {
-    font-size: 16px;
-  }
-  .job-description > .current-job > .company-logo {
-    height: 66.65px;
-    width: 66.65px;
-  }
-  .job-description > .current-job > .company-logo > img {
-    height: 40px;
-  }
-  .job-description > .current-job > .description > p {
-    font-size: 18.662px;
-  }
-  .job-description > .current-job > .description > p:nth-child(2) {
-    font-size: 16px;
-  }
+    .left-about > .about-title {
+        font-size: 90px;
+    }
+    .right-desc {
+        font-size: 32px;
+    }
+
+    .job-description-head {
+        font-size: 16px;
+    }
+
+    .current-job > .company-logo {
+        height: 66.65px;
+        width: 66.65px;
+    }
+
+    .current-job > .company-logo > img {
+        height: 40px;
+    }
+
+    .current-job > .description > p {
+        font-size: 18.662px;
+    }
+
+    .current-job > .description > p:nth-child(2) {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 1030px) {
-  .intro-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
+    .intro-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 
-  .intro-wrapper > .right-desc {
-    margin-top: 15px;
-  }
+    .intro-wrapper > .right-desc {
+        margin-top: 15px;
+    }
+
+    .job-description {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .past {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 650px) {
-  .intro-wrapper {
-    padding: 30px;
-  }
+    .intro-wrapper {
+        padding: 30px;
+    }
 }
